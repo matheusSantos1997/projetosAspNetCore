@@ -1,0 +1,28 @@
+D:\projetos Asp Net Core\consumoApi\ApiClient\bin\Debug\netcoreapp2.2\ApiClient.deps.json
+D:\projetos Asp Net Core\consumoApi\ApiClient\bin\Debug\netcoreapp2.2\ApiClient.runtimeconfig.json
+D:\projetos Asp Net Core\consumoApi\ApiClient\bin\Debug\netcoreapp2.2\ApiClient.runtimeconfig.dev.json
+D:\projetos Asp Net Core\consumoApi\ApiClient\bin\Debug\netcoreapp2.2\ApiClient.dll
+D:\projetos Asp Net Core\consumoApi\ApiClient\bin\Debug\netcoreapp2.2\ApiClient.pdb
+D:\projetos Asp Net Core\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.csprojAssemblyReference.cache
+D:\projetos Asp Net Core\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.csproj.CoreCompileInputs.cache
+D:\projetos Asp Net Core\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.RazorAssemblyInfo.cache
+D:\projetos Asp Net Core\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.RazorAssemblyInfo.cs
+D:\projetos Asp Net Core\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.AssemblyInfoInputs.cache
+D:\projetos Asp Net Core\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.AssemblyInfo.cs
+D:\projetos Asp Net Core\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.RazorTargetAssemblyInfo.cache
+D:\projetos Asp Net Core\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.dll
+D:\projetos Asp Net Core\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.pdb
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\bin\Debug\netcoreapp2.2\ApiClient.deps.json
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\bin\Debug\netcoreapp2.2\ApiClient.runtimeconfig.json
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\bin\Debug\netcoreapp2.2\ApiClient.runtimeconfig.dev.json
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\bin\Debug\netcoreapp2.2\ApiClient.dll
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\bin\Debug\netcoreapp2.2\ApiClient.pdb
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.RazorAssemblyInfo.cache
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.RazorAssemblyInfo.cs
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.AssemblyInfoInputs.cache
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.AssemblyInfo.cs
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.RazorTargetAssemblyInfo.cache
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.dll
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.pdb
+C:\Users\Matheus\Desktop\consumoApi\ApiClient\obj\Debug\netcoreapp2.2\ApiClient.csprojAssemblyReference.cache

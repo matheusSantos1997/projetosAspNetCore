@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "iOEv2KK2YT54roGrB8gS4X/q9G1CFlks57oFH+38SUft+mosG+U44+aBJf1+XLz1jdY7dKU1xS1uVEfsFNGXuw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Matheus\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

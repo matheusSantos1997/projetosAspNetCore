@@ -1,0 +1,9 @@
+C:\Users\Matheus\Desktop\EFProject\EFDomain\bin\Debug\netstandard2.0\EFDomain.deps.json
+C:\Users\Matheus\Desktop\EFProject\EFDomain\bin\Debug\netstandard2.0\EFDomain.dll
+C:\Users\Matheus\Desktop\EFProject\EFDomain\bin\Debug\netstandard2.0\EFDomain.pdb
+C:\Users\Matheus\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.csprojAssemblyReference.cache
+C:\Users\Matheus\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.AssemblyInfoInputs.cache
+C:\Users\Matheus\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.AssemblyInfo.cs
+C:\Users\Matheus\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.dll
+C:\Users\Matheus\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.pdb

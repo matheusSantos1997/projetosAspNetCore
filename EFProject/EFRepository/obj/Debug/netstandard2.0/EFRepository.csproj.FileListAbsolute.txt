@@ -1,0 +1,12 @@
+C:\Users\Matheus\Desktop\EFProject\EFRepository\bin\Debug\netstandard2.0\EFRepository.deps.json
+C:\Users\Matheus\Desktop\EFProject\EFRepository\bin\Debug\netstandard2.0\EFRepository.dll
+C:\Users\Matheus\Desktop\EFProject\EFRepository\bin\Debug\netstandard2.0\EFRepository.pdb
+C:\Users\Matheus\Desktop\EFProject\EFRepository\bin\Debug\netstandard2.0\EFDomain.dll
+C:\Users\Matheus\Desktop\EFProject\EFRepository\bin\Debug\netstandard2.0\EFDomain.pdb
+C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.csprojAssemblyReference.cache
+C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.AssemblyInfoInputs.cache
+C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.AssemblyInfo.cs
+C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.csproj.CopyComplete
+C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.dll
+C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.pdb

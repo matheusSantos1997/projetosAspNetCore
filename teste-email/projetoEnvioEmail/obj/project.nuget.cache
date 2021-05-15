@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "1HSDOMj/Dn0qd6wVu6oGzTOS/cWehafavc03S1Jgq4CPj/I1bkunbKOviFAsZE3F4425IOSxwY5PHr8P5a7qng==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Matheus\\Desktop\\teste-email\\projetoEnvioEmail\\projetoEnvioEmail.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Matheus\\.nuget\\packages\\mailkit\\2.12.0\\mailkit.2.12.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\mimekit\\2.12.0\\mimekit.2.12.0.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\portable.bouncycastle\\1.8.10\\portable.bouncycastle.1.8.10.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\system.reflection.typeextensions\\4.4.0\\system.reflection.typeextensions.4.4.0.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\system.security.cryptography.cng\\4.7.0\\system.security.cryptography.cng.4.7.0.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\system.security.cryptography.pkcs\\4.7.0\\system.security.cryptography.pkcs.4.7.0.nupkg.sha512",
+    "C:\\Users\\Matheus\\.nuget\\packages\\system.text.encoding.codepages\\4.4.0\\system.text.encoding.codepages.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
