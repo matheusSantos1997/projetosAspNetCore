@@ -10,3 +10,15 @@ C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepos
 C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.csproj.CopyComplete
 C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.dll
 C:\Users\Matheus\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.pdb
+C:\Users\mathe\Desktop\EFProject\EFRepository\bin\Debug\netstandard2.0\EFRepository.deps.json
+C:\Users\mathe\Desktop\EFProject\EFRepository\bin\Debug\netstandard2.0\EFRepository.dll
+C:\Users\mathe\Desktop\EFProject\EFRepository\bin\Debug\netstandard2.0\EFRepository.pdb
+C:\Users\mathe\Desktop\EFProject\EFRepository\bin\Debug\netstandard2.0\EFDomain.dll
+C:\Users\mathe\Desktop\EFProject\EFRepository\bin\Debug\netstandard2.0\EFDomain.pdb
+C:\Users\mathe\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.csprojAssemblyReference.cache
+C:\Users\mathe\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.AssemblyInfoInputs.cache
+C:\Users\mathe\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.AssemblyInfo.cs
+C:\Users\mathe\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.csproj.CopyComplete
+C:\Users\mathe\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.dll
+C:\Users\mathe\Desktop\EFProject\EFRepository\obj\Debug\netstandard2.0\EFRepository.pdb

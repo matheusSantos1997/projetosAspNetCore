@@ -33,7 +33,7 @@ namespace projetoEnvioEmail.Controllers
         {
             var rng = new Random();
             
-            var message = new Message(new string[] { "matheus.uspeu@gmail.com" }, "This is the content", "This is the content from our email.");
+            var message = new Message(new string[] { "Email here" }, "This is the content", "This is the content from our email.");
 
            _emailService.SendEmail(message);
 

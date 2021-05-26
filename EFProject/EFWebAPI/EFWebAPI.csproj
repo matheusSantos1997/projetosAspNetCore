@@ -4,13 +4,13 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App"/>
-    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0"/>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0"/>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EFDomain\EFDomain.csproj"/>
-    <ProjectReference Include="..\EFRepository\EFRepository.csproj"/>
+    <ProjectReference Include="..\EFDomain\EFDomain.csproj" />
+    <ProjectReference Include="..\EFRepository\EFRepository.csproj" />
   </ItemGroup>
 </Project>

@@ -17,3 +17,11 @@ C:\Users\Matheus\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.Raz
 C:\Users\Matheus\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.csproj.CopyComplete
 C:\Users\Matheus\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.dll
 C:\Users\Matheus\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.pdb
+C:\Users\mathe\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.csprojAssemblyReference.cache
+C:\Users\mathe\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.RazorAssemblyInfo.cache
+C:\Users\mathe\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.RazorAssemblyInfo.cs
+C:\Users\mathe\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.AssemblyInfoInputs.cache
+C:\Users\mathe\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.AssemblyInfo.cs
+C:\Users\mathe\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.dll
+C:\Users\mathe\Desktop\EFProject\EFWebAPI\obj\Debug\netcoreapp2.2\EFWebAPI.pdb

@@ -7,3 +7,12 @@ C:\Users\Matheus\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.As
 C:\Users\Matheus\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.AssemblyInfo.cs
 C:\Users\Matheus\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.dll
 C:\Users\Matheus\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.pdb
+C:\Users\mathe\Desktop\EFProject\EFDomain\bin\Debug\netstandard2.0\EFDomain.deps.json
+C:\Users\mathe\Desktop\EFProject\EFDomain\bin\Debug\netstandard2.0\EFDomain.dll
+C:\Users\mathe\Desktop\EFProject\EFDomain\bin\Debug\netstandard2.0\EFDomain.pdb
+C:\Users\mathe\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.csprojAssemblyReference.cache
+C:\Users\mathe\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.AssemblyInfoInputs.cache
+C:\Users\mathe\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.AssemblyInfo.cs
+C:\Users\mathe\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.dll
+C:\Users\mathe\Desktop\EFProject\EFDomain\obj\Debug\netstandard2.0\EFDomain.pdb

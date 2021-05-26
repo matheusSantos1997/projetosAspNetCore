@@ -1,30 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matheus\\Desktop\\EFProject\\EFRepository\\EFRepository.csproj": {}
+    "C:\\Users\\mathe\\Desktop\\EFProject\\EFRepository\\EFRepository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matheus\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj": {
+    "C:\\Users\\mathe\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj",
         "projectName": "EFDomain",
-        "projectPath": "C:\\Users\\Matheus\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj",
-        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matheus\\Desktop\\EFProject\\EFDomain\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\Desktop\\EFProject\\EFDomain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,34 +54,32 @@
         }
       }
     },
-    "C:\\Users\\Matheus\\Desktop\\EFProject\\EFRepository\\EFRepository.csproj": {
+    "C:\\Users\\mathe\\Desktop\\EFProject\\EFRepository\\EFRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\EFProject\\EFRepository\\EFRepository.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\EFProject\\EFRepository\\EFRepository.csproj",
         "projectName": "EFRepository",
-        "projectPath": "C:\\Users\\Matheus\\Desktop\\EFProject\\EFRepository\\EFRepository.csproj",
-        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matheus\\Desktop\\EFProject\\EFRepository\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\Desktop\\EFProject\\EFRepository\\EFRepository.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\Desktop\\EFProject\\EFRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "C:\\Users\\Matheus\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj": {
-                "projectPath": "C:\\Users\\Matheus\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj"
+              "C:\\Users\\mathe\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj": {
+                "projectPath": "C:\\Users\\mathe\\Desktop\\EFProject\\EFDomain\\EFDomain.csproj"
               }
             }
           }
