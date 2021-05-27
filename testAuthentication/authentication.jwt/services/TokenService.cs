@@ -3,16 +3,17 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using authentication.jwt.models;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace authentication.jwt.services
 {
     public static class TokenService
     {
-        public static string GenerateToken(User user)
+        public static string GenerateToken(User user, IConfiguration Configuration)
         {
              var tokenHandler = new JwtSecurityTokenHandler();
-             var key = Encoding.ASCII.GetBytes(Settings.Secret); // gerando a chave
+             var key = Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Secret").Value); // gerando a chave
 
              // gerando um token descriptor com as informaçoes
              var tokenDescriptor = new SecurityTokenDescriptor

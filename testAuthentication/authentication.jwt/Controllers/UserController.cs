@@ -5,6 +5,7 @@ using authentication.jwt.services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace authentication.jwt.Controllers
 {
@@ -12,10 +13,13 @@ namespace authentication.jwt.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private IConfiguration _config;
         private readonly IUserService _userService;
-        public UserController(IUserService userService)
+        public UserController(IUserService userService, IConfiguration config)
         {
             _userService = userService;
+            _config = config;
+
         }
         
         // lists all registered users 
@@ -67,11 +71,12 @@ namespace authentication.jwt.Controllers
                  return NotFound(new { message = "Usuário ou senha inválidos!"});
              }
 
-             var token = TokenService.GenerateToken(user);
+             var token = TokenService.GenerateToken(user, _config);
              user.Password = "";
              return new {
                  user = user,
-                 token = token
+                 token = token,
+                 config = _config
              };
             
             // return Ok();
