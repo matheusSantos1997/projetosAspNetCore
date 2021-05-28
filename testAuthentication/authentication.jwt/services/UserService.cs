@@ -34,9 +34,9 @@ namespace authentication.jwt.services
             return await query.ToListAsync();
         }
 
-        public User Login(User user)
+        public async Task<User> Login(User user)
         {
-            var userOne = context.User.SingleOrDefault(x => x.UserName == user.UserName);
+            var userOne = await context.User.SingleOrDefaultAsync(x => x.UserName == user.UserName);
 
             bool isValidPassword = BCrypt.Net.BCrypt.Verify(user.Password, userOne.Password);
 
@@ -47,5 +47,6 @@ namespace authentication.jwt.services
 
             return null;
         }
+
     }
 }

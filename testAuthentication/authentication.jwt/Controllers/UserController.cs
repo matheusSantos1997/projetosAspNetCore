@@ -13,7 +13,7 @@ namespace authentication.jwt.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
-        private IConfiguration _config;
+        private readonly IConfiguration _config;
         private readonly IUserService _userService;
         public UserController(IUserService userService, IConfiguration config)
         {
@@ -62,24 +62,32 @@ namespace authentication.jwt.Controllers
         [HttpPost]
         [Route("login")]
         [AllowAnonymous]
-        public ActionResult<dynamic> Signin([FromBody]User model)
+        public async Task<IActionResult> Signin([FromBody]User model)
         {
-             var user = _userService.Login(model);
+            try
+            {
+                var user = await _userService.Login(model);
 
-             if (user == null) 
-             {
-                 return NotFound(new { message = "Usuário ou senha inválidos!"});
-             }
+                if (user == null)
+                {
+                    return NotFound(new { message = "Usuário ou senha inválidos!" });
+                }
 
-             var token = TokenService.GenerateToken(user, _config);
-             user.Password = "";
-             return new {
-                 user = user,
-                 token = token,
-                 config = _config
-             };
-            
-            // return Ok();
+                var token = TokenService.GenerateToken(user, _config);
+                user.Password = "";
+                var obj = new
+                {
+                    user = user,
+                    token = token,
+                    config = _config
+                };
+
+                return Ok(obj);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet]
