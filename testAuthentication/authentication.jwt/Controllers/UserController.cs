@@ -59,6 +59,7 @@ namespace authentication.jwt.Controllers
              return BadRequest();
         }
 
+        // authentication login
         [HttpPost]
         [Route("login")]
         [AllowAnonymous]
@@ -95,6 +96,7 @@ namespace authentication.jwt.Controllers
         [AllowAnonymous]
         public string Anonymous() => "Anônimo";
 
+        // authenticated
         [HttpGet]
         [Route("authenticated")]
         [Authorize]
