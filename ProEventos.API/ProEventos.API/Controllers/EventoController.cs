@@ -3,8 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using ProEventos.Application.interfaces;
 using ProEventos.Domain;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ProEventos.API.Controllers
@@ -26,7 +24,7 @@ namespace ProEventos.API.Controllers
         {
             try
             {
-                var eventos = await _eventoService.GetAllEventosAsync(true);
+                var eventos = await _eventoService.GetAllEventosAsync(true); // true pra poder retornar os palestrantes
                 if (eventos == null) return NotFound("Nenhum evento encontrado.");
 
                 return Ok(eventos);

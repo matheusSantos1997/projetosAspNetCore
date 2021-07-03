@@ -2,8 +2,6 @@
 using ProEventos.Domain;
 using ProEventos.Persistence.interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ProEventos.Application
@@ -29,10 +27,11 @@ namespace ProEventos.Application
                 // se foi salvo
                 bool save = await _geralPersistence.SaveChangesAsync();
 
+                // se salvou o evento
                 if (save)
                 {
                     // return Ok()
-                    return await _eventoPersistence.GetEventosByIdAsync(model.EventoId, false);
+                    return await _eventoPersistence.GetEventosByIdAsync(model.EventoId, false); // retorna o evento inserido e salvo
                 }
 
                 return null;
@@ -47,7 +46,7 @@ namespace ProEventos.Application
         {
             try
             {
-                var evento = await _eventoPersistence.GetEventosByIdAsync(eventoId, false);
+                var evento = await _eventoPersistence.GetEventosByIdAsync(eventoId, false); // busca um evento especifico
 
                 model.EventoId = evento.EventoId;
 
@@ -82,12 +81,14 @@ namespace ProEventos.Application
             {
                 var evento = await _eventoPersistence.GetEventosByIdAsync(eventoId, false);
 
+                // se o evento nao for encontrado para ser excluido
                 if (evento == null)
                 {
                     throw new Exception("Evento não foi encontrado para ser excluido.");
+                    // return false;
                 }
 
-                _geralPersistence.Delete<Evento>(evento);
+                _geralPersistence.Delete<Evento>(evento); // deleta o evento
                 return await _geralPersistence.SaveChangesAsync();
             }
             catch(Exception ex)

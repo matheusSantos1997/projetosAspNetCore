@@ -32,7 +32,7 @@ namespace ProEventos.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ProEventosContext>(
-               x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
+               x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")) // conexao com o sqlite
             );
             services.AddControllers()
                     .AddNewtonsoftJson(
@@ -40,9 +40,12 @@ namespace ProEventos.API
                           Newtonsoft.Json.ReferenceLoopHandling.Ignore 
                      ); // ignora loopHandling(loop infinito) quando tem multiplos relacionamentos na hora que for atualizar
 
-            services.AddScoped<IEventoService, EventoService>();
+            // dependency injection - interface injection in class
+            services.AddScoped<IEventoService, EventoService>(); 
             services.AddScoped<IGeralPersistence, GeralPersistence>();
             services.AddScoped<IEventoPersistence, EventoPersistence>();
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,6 +61,8 @@ namespace ProEventos.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 
             app.UseEndpoints(endpoints =>
             {

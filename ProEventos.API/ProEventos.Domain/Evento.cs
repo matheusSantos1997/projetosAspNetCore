@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
 
 namespace ProEventos.Domain
 {
@@ -11,7 +9,7 @@ namespace ProEventos.Domain
 
         public string Local { get; set; }
 
-        public DateTime? DataEvento { get; set; }
+        public DateTime? DataEvento { get; set; } // data pode ser nula
 
         public string Tema { get; set; }
 
@@ -23,10 +21,10 @@ namespace ProEventos.Domain
 
         public string Email { get; set; }
 
-        public IEnumerable<Lote> Lotes { get; set; }
+        public IEnumerable<Lote> Lotes { get; set; } // relacionamento 1:N
 
-        public IEnumerable<RedeSocial> RedesSociais { get; set; }
+        public IEnumerable<RedeSocial> RedesSociais { get; set; } // relacionamento 1:N
 
-        public IEnumerable<PalestranteEvento> PalestrantesEventos { get; set; }
+        public IEnumerable<PalestranteEvento> PalestrantesEventos { get; set; } // relacionamento N:N
     }
 }

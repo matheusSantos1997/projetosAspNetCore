@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace ProEventos.Persistence.interfaces
 {
     public interface IGeralPersistence
     {
         // GERAL
-        void Add<T>(T entity) where T : class;
+        void Add<T>(T entity) where T : class; // T genérico onde T é uma classe
 
         void Update<T>(T entity) where T : class;
 

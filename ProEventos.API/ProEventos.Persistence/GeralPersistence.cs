@@ -1,8 +1,5 @@
 ﻿using ProEventos.Persistence.context;
 using ProEventos.Persistence.interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ProEventos.Persistence
@@ -39,7 +36,7 @@ namespace ProEventos.Persistence
 
         public async Task<bool> SaveChangesAsync()
         {
-            bool result = await _context.SaveChangesAsync() > 0;
+            bool result = await _context.SaveChangesAsync() > 0; // se foi salvo
             return (result);
         }
     }

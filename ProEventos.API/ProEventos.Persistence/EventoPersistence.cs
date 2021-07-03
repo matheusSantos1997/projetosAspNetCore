@@ -2,35 +2,33 @@
 using ProEventos.Domain;
 using ProEventos.Persistence.context;
 using ProEventos.Persistence.interfaces;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ProEventos.Persistence
 {
     public class EventoPersistence : IEventoPersistence
     {
+        // dependence injection context in persistense evento
         private readonly ProEventosContext _context;
 
         public EventoPersistence(ProEventosContext context)
         {
             _context = context;
-           // _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+            _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking; 
         }
 
         public async Task<Evento[]> GetAllEventosAsync(bool includePalestrantes)
         {
             IQueryable<Evento> query = _context.Eventos
-                                               .Include(e => e.Lotes)
+                                               .Include(e => e.Lotes) 
                                                .Include(e => e.RedesSociais);
 
             if(includePalestrantes)
             {
                 query = query
                     .Include(p => p.PalestrantesEventos)
-                    .ThenInclude(pe => pe.Palestrante);
+                    .ThenInclude(pe => pe.Palestrante); // inclua de palestranteEvento os palestrantes
             }
 
             query = query
