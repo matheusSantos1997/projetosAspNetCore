@@ -1,0 +1,15 @@
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\bin\Debug\netcoreapp3.1\AuthenticationUsers.Data.deps.json
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\bin\Debug\netcoreapp3.1\AuthenticationUsers.Data.runtimeconfig.json
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\bin\Debug\netcoreapp3.1\AuthenticationUsers.Data.runtimeconfig.dev.json
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\bin\Debug\netcoreapp3.1\AuthenticationUsers.Data.dll
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\bin\Debug\netcoreapp3.1\AuthenticationUsers.Data.pdb
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\bin\Debug\netcoreapp3.1\AuthenticationUsers.Business.dll
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\bin\Debug\netcoreapp3.1\AuthenticationUsers.Business.pdb
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\obj\Debug\netcoreapp3.1\AuthenticationUsers.Data.csproj.AssemblyReference.cache
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\obj\Debug\netcoreapp3.1\AuthenticationUsers.Data.AssemblyInfoInputs.cache
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\obj\Debug\netcoreapp3.1\AuthenticationUsers.Data.AssemblyInfo.cs
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\obj\Debug\netcoreapp3.1\AuthenticationUsers.Data.csproj.CoreCompileInputs.cache
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\obj\Debug\netcoreapp3.1\AuthenticationUsers.Data.csproj.CopyComplete
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\obj\Debug\netcoreapp3.1\AuthenticationUsers.Data.dll
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\obj\Debug\netcoreapp3.1\AuthenticationUsers.Data.pdb
+C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Data\obj\Debug\netcoreapp3.1\AuthenticationUsers.Data.genruntimeconfig.cache
