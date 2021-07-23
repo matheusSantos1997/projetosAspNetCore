@@ -26,28 +26,8 @@ namespace AuthenticationUsers.API.Controllers
             _userService = userService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get()
-        {
-            try
-            {
-                var users = await _userService.GetAllUsers();
-
-                if(users == null)
-                {
-                    return NotFound("Not Found User.");
-                }
-
-                return Ok(users);
-            }
-            catch(Exception ex)
-            {
-                return this.StatusCode(StatusCodes.Status500InternalServerError,
-                    $"error when retrieving users. Error: {ex.Message}");
-            }
-        }
-
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<IActionResult> GetById(long id)
         {
             try
@@ -60,27 +40,6 @@ namespace AuthenticationUsers.API.Controllers
                 }
 
                 return Ok(user);
-            }
-            catch(Exception ex)
-            {
-                return this.StatusCode(StatusCodes.Status500InternalServerError,
-                    $"error when retrieving users. Error: {ex.Message}");
-            }
-        }
-
-        [HttpGet("name/{name}")]
-        public async Task<IActionResult> GetByName(string name)
-        {
-            try
-            {
-                var users = await _userService.GetAllUsersByName(name);
-
-                if (users == null)
-                {
-                    return NotFound("Not Found User.");
-                }
-
-                return Ok(users);
             }
             catch(Exception ex)
             {
@@ -113,7 +72,7 @@ namespace AuthenticationUsers.API.Controllers
 
         [HttpPost("login")]
         [AllowAnonymous]
-        public async Task<IActionResult> Login(User model)
+        public async Task<IActionResult> Login([FromBody]User model)
         {
             try
             {
@@ -130,7 +89,6 @@ namespace AuthenticationUsers.API.Controllers
                 {
                     user = user,
                     token = token,
-                    config = _config
                 };
 
                 return Ok(obj);

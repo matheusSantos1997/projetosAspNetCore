@@ -34,7 +34,12 @@ namespace AuthenticationUsers.Data.Migrations
                         .HasColumnName("title")
                         .HasColumnType("varchar(20)");
 
+                    b.Property<long?>("UserId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Posts");
                 });
@@ -72,6 +77,14 @@ namespace AuthenticationUsers.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("AuthenticationUsers.Business.models.Post", b =>
+                {
+                    b.HasOne("AuthenticationUsers.Business.models.User", "User")
+                        .WithMany("Posts")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

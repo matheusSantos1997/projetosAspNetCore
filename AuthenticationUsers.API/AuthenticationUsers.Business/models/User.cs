@@ -30,6 +30,6 @@ namespace AuthenticationUsers.Business.models
         [Column("createdAt")]
         public DateTime? CreatedAt { get; set; } = DateTime.Now;
 
-       // public IEnumerable<Post> Posts { get; set; }
+        public IEnumerable<Post> Posts { get; set; }
     }
 }

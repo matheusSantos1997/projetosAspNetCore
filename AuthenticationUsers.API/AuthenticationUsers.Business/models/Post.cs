@@ -20,10 +20,10 @@ namespace AuthenticationUsers.Business.models
         [Column("createdAt")]
         public DateTime? CreatedAt { get; set; } = DateTime.Now;
 
-     /*   [ForeignKey("UserAdminId")]
-        public long? UserRefId { get; set; }
+        [ForeignKey("userId")]
+        public long? UserId { get; set; }
 
-        public User User { get; set; } */
+        public User User { get; set; }
       
     }
 }

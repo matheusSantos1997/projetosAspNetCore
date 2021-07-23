@@ -20,27 +20,10 @@ namespace AuthenticationUsers.Data.Repository
             _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
-        public async Task<List<User>> GetAllUsers()
-        {
-            var users = await _context.Users.AsNoTracking()
-                                            .OrderBy(u => u.Id)
-                                            .ToListAsync();
-            return users;
-                                         
-        }
-
-        public async Task<List<User>> GetAllUsersByName(string name)
-        {
-            var users = await _context.Users.AsNoTracking()
-                                            .OrderBy(u => u.Id)
-                                            .Where(u => u.Name.ToLower().Contains(name.ToLower()))
-                                            .ToListAsync();
-            return users;
-        }
-
         public async Task<User> GetUserById(long id)
         {
             var user = await _context.Users.AsNoTracking()
+                                           .Include(u => u.Posts)
                                            .OrderBy(u => u.Id)
                                            .Where(u => u.Id == id)
                                            .FirstOrDefaultAsync();

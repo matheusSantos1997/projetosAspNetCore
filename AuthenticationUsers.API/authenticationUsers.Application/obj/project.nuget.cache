@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "54DxmrWTp4ciTZ9yPrW7ZVK77CjrYHdoPaPcIq984JHhvgAlQG/gxsaouR6V+M5S/ePYI90HwQ+WnBFlI5uzkg==",
+  "dgSpecHash": "GpsreZ0/4v55oTCW8DIzSN1q+AHTGqh9yL+uGMfuADp8aQ6rEKKprJokq01fmgmFrcaqu7aPPCtSXOcCqZkNeA==",
   "success": true,
   "projectFilePath": "C:\\Users\\mathe\\source\\repos\\AuthenticationUsers.API\\authenticationUsers.Application\\authenticationUsers.Application.csproj",
   "expectedPackageFiles": [

@@ -83,6 +83,7 @@ namespace AuthenticationUsers.API.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Post(Post model)
         {
             try
@@ -101,6 +102,7 @@ namespace AuthenticationUsers.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<IActionResult> Put(long id, Post model)
         {
             try
@@ -118,6 +120,7 @@ namespace AuthenticationUsers.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<IActionResult> Delete(long id)
         {
             try

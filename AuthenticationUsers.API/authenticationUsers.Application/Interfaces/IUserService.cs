@@ -14,10 +14,6 @@ namespace authenticationUsers.Application.Interfaces
 
         Task<User> UpdateUser(long id, User model);
 
-        Task<List<User>> GetAllUsers();
-
-        Task<List<User>> GetAllUsersByName(string title);
-
         Task<User> GetUserById(long id);
 
 

@@ -11,12 +11,14 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,11 +46,16 @@ namespace AuthenticationUsers.API
 
             services.AddControllers();
 
-           /* services.AddControllers().AddNewtonsoftJson(options =>
+            services.AddControllers()
+                     .AddJsonOptions(options =>
+                     {
+                         options.JsonSerializerOptions.IgnoreNullValues = true; // api ignora os valores nulos
+                     })
+                    .AddNewtonsoftJson(options =>
             {
                 options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
                 options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-            }); */
+            });
 
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<IUserService, UserService>();

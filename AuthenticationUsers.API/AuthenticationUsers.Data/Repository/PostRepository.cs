@@ -24,7 +24,7 @@ namespace AuthenticationUsers.Data.Repository
         {
             IQueryable<Post> query = _context.Posts.AsNoTracking();
         
-            query = query.OrderBy(p => p.Id);
+            query = query.Include(p => p.User).OrderBy(p => p.Id);
 
             return await query.ToListAsync();
         }
@@ -33,7 +33,7 @@ namespace AuthenticationUsers.Data.Repository
         {
             IQueryable<Post> query = _context.Posts.AsNoTracking();
 
-            query = query.Where(p => p.Title.ToLower().Contains(title.ToLower()));
+            query = query.Include(p => p.User).Where(p => p.Title.ToLower().Contains(title.ToLower()));
                                            
             return await query.ToListAsync();
         }
@@ -43,7 +43,7 @@ namespace AuthenticationUsers.Data.Repository
             IQueryable<Post> query = _context.Posts.AsNoTracking();
 
 
-            query = query.Where(p => p.Id == id);
+            query = query.Include(p => p.User).Where(p => p.Id == id);
                                            
             return await query.FirstOrDefaultAsync();
         }

@@ -91,38 +91,6 @@ namespace authenticationUsers.Application.Services
             }
         }
 
-        public async Task<List<User>> GetAllUsers()
-        {
-            try
-            {
-                var users = await _user.GetAllUsers();
-
-                if (users == null) return null;
-
-                return users;
-            }
-            catch(Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        public async Task<List<User>> GetAllUsersByName(string title)
-        {
-            try
-            {
-                var users = await _user.GetAllUsersByName(title);
-
-                if (users == null) return null;
-
-                return users;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
         public async Task<User> GetUserById(long id)
         {
             try
