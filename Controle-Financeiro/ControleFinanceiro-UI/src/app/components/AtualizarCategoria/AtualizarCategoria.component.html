@@ -1,0 +1,41 @@
+<div class="divCard" *ngIf="formulario">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title><h3>Atualizar a categoria {{nomeCategoria}}</h3></mat-card-title>
+    </mat-card-header>
+
+    <form [formGroup]="formulario" (ngSubmit)="enviarFormulario()">
+       <mat-card-content>
+         <div>
+           <mat-form-field>
+             <mat-label>Nome</mat-label>
+             <input matInput type="text" formControlName="nome" autocomplete="off" placeholder="Digite o nome da categoria"/>
+           </mat-form-field>
+         </div>
+         <div>
+           <mat-form-field>
+             <mat-label>Ícone</mat-label>
+             <input matInput type="text" formControlName="icone" autocomplete="off" placeholder="Digite o código do ícone"/>
+           </mat-form-field>
+         </div>
+         <div>
+           <mat-form-field>
+             <mat-label>Selecione o tipo adequado</mat-label>
+             <mat-select formControlName="tipoId">
+               <mat-option *ngFor="let tipo of tipos" [value]="tipo.tipoId">{{ tipo.nome }}</mat-option>
+             </mat-select>
+           </mat-form-field>
+         </div>
+       </mat-card-content>
+
+       <mat-divider></mat-divider>
+
+       <mat-card-actions>
+         <div>
+           <button type="submit" mat-stroked-button color="primary">Atualizar</button>
+           <button mat-stroked-button type="button" (click)="voltarListagem()">Voltar</button>
+         </div>
+       </mat-card-actions>
+    </form>
+  </mat-card>
+</div>
