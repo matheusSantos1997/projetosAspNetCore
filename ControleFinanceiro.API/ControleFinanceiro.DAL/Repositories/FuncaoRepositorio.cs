@@ -1,8 +1,10 @@
 ﻿using ControleFinanceiro.BLL.Models;
 using ControleFinanceiro.DAL.Interfaces;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -45,6 +47,20 @@ namespace ControleFinanceiro.DAL.Repositories
                 await _gerenciadorFuncoes.UpdateAsync(f);
             }
             catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public IQueryable<Funcao> FiltrarFuncoes(string nomeFuncao)
+        {
+            try
+            {
+                var entity = _contexto.Funcoes.Where(f => f.Name.ToLower().Contains(nomeFuncao.ToLower()));
+
+                return entity;
+            }
+            catch(Exception ex)
             {
                 throw ex;
             }

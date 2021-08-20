@@ -2,6 +2,7 @@
 using ControleFinanceiro.BLL.Models;
 using ControleFinanceiro.DAL.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,12 @@ namespace ControleFinanceiro.API.Controllers
         public FuncoesController(IFuncaoRepositorio funcaoRepositorio)
         {
             _funcaoRepositorio = funcaoRepositorio;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Funcao>>> GetFuncoes()
+        {
+            return await _funcaoRepositorio.PegarTodos().ToListAsync();
         }
 
         [HttpGet("{id}")]
@@ -91,6 +98,13 @@ namespace ControleFinanceiro.API.Controllers
             await _funcaoRepositorio.Excluir(funcao);
 
             return Ok(new { mensagem = $"Função {funcao.Name} excluida com sucesso" });
+        }
+
+        [HttpGet("FiltrarFuncoes/{nomeFuncao}")]
+        public async Task<ActionResult<IEnumerable<Funcao>>> FiltrarFuncoes(string nomeFuncao)
+        {
+            return await _funcaoRepositorio.FiltrarFuncoes(nomeFuncao).ToListAsync();
+
         }
     }
 }

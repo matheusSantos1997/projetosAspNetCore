@@ -45,7 +45,7 @@ namespace ControleFinanceiro.API
             services.AddScoped<ITipoRepositorio, TipoRepositorio>();
             services.AddScoped<IFuncaoRepositorio, FuncaoRepositorio>();
 
-            services.AddTransient<IValidator<Categoria>, CategoriaValidator>();
+            services.AddTransient<IValidator<Categoria>, CategoriaValidator>(); // validaçao de Categoria
 
             services.AddCors(); // habilita o cors
 
