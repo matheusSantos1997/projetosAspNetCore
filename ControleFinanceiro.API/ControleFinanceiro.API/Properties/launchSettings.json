@@ -11,14 +11,14 @@
   "profiles": {
     "IIS Express": {
       "commandName": "IISExpress",
-      "launchUrl": "weatherforecast",
+      "launchUrl": "UsuariosController",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "ControleFinanceiro.API": {
       "commandName": "Project",
-      "launchUrl": "weatherforecast",
+      "launchUrl": "UsuariosController",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

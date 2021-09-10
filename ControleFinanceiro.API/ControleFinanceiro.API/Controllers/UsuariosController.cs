@@ -1,9 +1,11 @@
-﻿using ControleFinanceiro.API.ViewModels;
+﻿using ControleFinanceiro.API.Services;
+using ControleFinanceiro.API.ViewModels;
 using ControleFinanceiro.BLL.Models;
 using ControleFinanceiro.DAL.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace ControleFinanceiro.API.Controllers
@@ -37,18 +39,19 @@ namespace ControleFinanceiro.API.Controllers
         [HttpPost("SalvarFoto")]
         public async Task<IActionResult> SalvarFoto()
         {
-            // pega a foto do formulario na requisiçao
+            // pega uma foto do formulario na requisiçao
             var foto = Request.Form.Files[0];
+                
             byte[] b; // array de bytes
             
-            // vai ler um arquivo de upload
+            // lê um arquivo que foi feito no upload
             using(var openReadStream = foto.OpenReadStream())
             {
-                // copia o arquivo para memoria
+                // copia o arquivo para memoria e transforma em bytes
                 using (var memoryStream = new MemoryStream())
                 {
                     await openReadStream.CopyToAsync(memoryStream);
-                    b = memoryStream.ToArray(); // transforma o arquivo em array e salva no array de bytes
+                    b = memoryStream.ToArray(); // transforma o arquivo de bytes em array e copia para array de bytes
                 }
             }
 
@@ -62,8 +65,10 @@ namespace ControleFinanceiro.API.Controllers
         [HttpPost("RegistrarUsuario")]
         public async Task<IActionResult> RegistrarUsuario(RegistroViewModel model)
         {
+            // verifica se os dados sao validos
             if (ModelState.IsValid)
             {
+                // status de criaçao do usuario
                 IdentityResult usuarioCriado;
                 string funcaoUsuario;
 
@@ -91,12 +96,16 @@ namespace ControleFinanceiro.API.Controllers
                 if (usuarioCriado.Succeeded)
                 {
                     await _usuarioRepositorio.IncluirUsuarioEmFuncao(usuario, funcaoUsuario);
+
+                    var token = TokenService.GerarToken(usuario, funcaoUsuario);
+
                     await _usuarioRepositorio.LogarUsuario(usuario, false);
 
                     return Ok(new
                     {
                         emailUsuarioLogado = usuario.Email,
-                        usuarioId = usuario.Id
+                        usuarioId = usuario.Id,
+                        tokenUsuarioLogado = token
                     });
                 }
                 else
@@ -107,5 +116,45 @@ namespace ControleFinanceiro.API.Controllers
 
             return BadRequest(model);
         }
+
+        // login de usuario
+        [HttpPost("LogarUsuario")]
+        public async Task<IActionResult> LogarUsuario(LoginViewModel model)
+        {
+            if(model == null)
+            {
+                return NotFound("Usuário e / ou senhas inválidos");
+            }
+
+            Usuario usuario = await _usuarioRepositorio.PegarUsuarioPeloEmail(model.Email);
+
+            // verificaçao se o usuario for diferente de null
+            if(usuario != null)
+            {
+                PasswordHasher<Usuario> passwordHasher = new PasswordHasher<Usuario>();
+
+                // a a senha encriptada existir e nao falhar
+                if(passwordHasher.VerifyHashedPassword(usuario, usuario.PasswordHash, model.Senha) != PasswordVerificationResult.Failed)
+                {
+                    // pegando as funçoes do unsuario
+                    var funcoesUsuario = await _usuarioRepositorio.PegarFuncoesUsuario(usuario);
+
+                    var token = TokenService.GerarToken(usuario, funcoesUsuario.First());
+
+                    await _usuarioRepositorio.LogarUsuario(usuario, false);
+
+                    return Ok(new
+                    {
+                        emailUsuarioLogado = usuario.Email,
+                        usuarioId = usuario.Id,
+                        tokenUsuarioLogado = token
+                    });
+                }
+
+                return NotFound("Usuário e/ou senha inválidos!");
+            }
+
+            return NotFound("Usuário e/ou senha inválidos!");
+        } 
     }
 }

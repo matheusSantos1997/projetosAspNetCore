@@ -1,6 +1,7 @@
 ﻿using ControleFinanceiro.BLL.Models;
 using ControleFinanceiro.DAL;
 using ControleFinanceiro.DAL.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -21,12 +22,14 @@ namespace ControleFinanceiro.API.Controllers
             _categoriaRepositorio = categoriaRepositorio;
         }
 
+        [Authorize(Roles = "Administrador")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Categoria>>> GetCategoria()
         {
             return await _categoriaRepositorio.PegarTodos().Include(c => c.Tipo).ToListAsync();
         }
 
+        [Authorize(Roles = "Administrador")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Categoria>> GetCategoriaId(int id)
         {
@@ -40,6 +43,7 @@ namespace ControleFinanceiro.API.Controllers
             return categoria;
         }
 
+        [Authorize(Roles = "Administrador")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategoria(int id, Categoria categoria)
         {
@@ -59,6 +63,7 @@ namespace ControleFinanceiro.API.Controllers
 
         }
 
+        [Authorize(Roles = "Administrador")]
         [HttpPost]
         public async Task<ActionResult<Categoria>> PostCategoria(Categoria categoria)
         {
@@ -71,6 +76,7 @@ namespace ControleFinanceiro.API.Controllers
             return BadRequest(ModelState);
         }
 
+        [Authorize(Roles = "Administrador")]
         [HttpDelete("{id}")]
         public async Task<ActionResult<Categoria>> DeleteCategoria(int id)
         {
@@ -83,9 +89,10 @@ namespace ControleFinanceiro.API.Controllers
             await _categoriaRepositorio.Excluir(id);
 
             return Ok(new { mensagem = $"Categoria {categoria.Nome} excluida com sucesso!" });
-        } 
+        }
 
         // filtrando por nome das categorias
+        [Authorize(Roles = "Administrador")]
         [HttpGet("FiltrarCategorias/{nomeCategoria}")]
         public async Task<ActionResult<IEnumerable<Categoria>>> FiltrarCategorias(string nomeCategoria)
         {
