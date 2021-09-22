@@ -7,3 +7,12 @@ C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Business
 C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Business\obj\Debug\netcoreapp3.1\AuthenticationUsers.Business.dll
 C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Business\obj\Debug\netcoreapp3.1\AuthenticationUsers.Business.pdb
 C:\Users\mathe\source\repos\AuthenticationUsers.API\AuthenticationUsers.Business\obj\Debug\netcoreapp3.1\AuthenticationUsers.Business.csproj.AssemblyReference.cache
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\AuthenticationUsers.Business\bin\Debug\netcoreapp3.1\AuthenticationUsers.Business.deps.json
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\AuthenticationUsers.Business\bin\Debug\netcoreapp3.1\AuthenticationUsers.Business.dll
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\AuthenticationUsers.Business\bin\Debug\netcoreapp3.1\AuthenticationUsers.Business.pdb
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\AuthenticationUsers.Business\obj\Debug\netcoreapp3.1\AuthenticationUsers.Business.csproj.AssemblyReference.cache
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\AuthenticationUsers.Business\obj\Debug\netcoreapp3.1\AuthenticationUsers.Business.AssemblyInfoInputs.cache
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\AuthenticationUsers.Business\obj\Debug\netcoreapp3.1\AuthenticationUsers.Business.AssemblyInfo.cs
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\AuthenticationUsers.Business\obj\Debug\netcoreapp3.1\AuthenticationUsers.Business.csproj.CoreCompileInputs.cache
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\AuthenticationUsers.Business\obj\Debug\netcoreapp3.1\AuthenticationUsers.Business.dll
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\AuthenticationUsers.Business\obj\Debug\netcoreapp3.1\AuthenticationUsers.Business.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QTu3Vzm5pz/UpcQLoyOIx+9xtv3ma791jis4oEWBEC3RwqHW68G3d1vZO6bsjfOCbOubMAvsBrVnTXv21J1+EQ==",
+  "dgSpecHash": "0NQjlsu6QiFb79K3uYF1E1LINZ5VYk/H+gp0hu17E/yJVGk4MfLzkKn4aZ68WNscn1YIii35aSrh6x9/J2LiRA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\source\\repos\\AuthenticationUsers.API\\AuthenticationUsers.Business\\AuthenticationUsers.Business.csproj",
+  "projectFilePath": "C:\\Users\\ModalGR\\Desktop\\AuthenticationUsers.API\\AuthenticationUsers.Business\\AuthenticationUsers.Business.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

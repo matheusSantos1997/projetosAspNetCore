@@ -19,7 +19,7 @@ namespace authenticationUsers.Application
             {
                 Subject = new ClaimsIdentity(new Claim[]
                 {
-                     new Claim(ClaimTypes.Email, user.Email.ToString()),
+                     new Claim(ClaimTypes.Name, user.Email.ToString()),
                      new Claim(ClaimTypes.Role, user.Role.ToString())
                 }),
 

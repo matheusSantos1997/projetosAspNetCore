@@ -128,7 +128,7 @@ namespace AuthenticationUsers.API.Controllers
         [HttpGet]
         [Route("authenticated")]
         [Authorize]
-        public string Authenticated() => "Autenticado!"; // pega o nome do usuario autenticado
+        public string Authenticated() => String.Format("Autenticado - {0}", User.Identity.Name); // pega o nome do usuario autenticado
 
         [HttpGet]
         [Route("employee")]

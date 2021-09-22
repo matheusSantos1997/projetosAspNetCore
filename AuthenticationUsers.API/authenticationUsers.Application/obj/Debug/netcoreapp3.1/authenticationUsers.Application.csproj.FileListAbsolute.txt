@@ -12,3 +12,17 @@ C:\Users\mathe\source\repos\AuthenticationUsers.API\authenticationUsers.Applicat
 C:\Users\mathe\source\repos\AuthenticationUsers.API\authenticationUsers.Application\obj\Debug\netcoreapp3.1\authenticationUsers.Application.csproj.CopyComplete
 C:\Users\mathe\source\repos\AuthenticationUsers.API\authenticationUsers.Application\obj\Debug\netcoreapp3.1\authenticationUsers.Application.dll
 C:\Users\mathe\source\repos\AuthenticationUsers.API\authenticationUsers.Application\obj\Debug\netcoreapp3.1\authenticationUsers.Application.pdb
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\bin\Debug\netcoreapp3.1\authenticationUsers.Application.deps.json
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\bin\Debug\netcoreapp3.1\authenticationUsers.Application.dll
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\bin\Debug\netcoreapp3.1\authenticationUsers.Application.pdb
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\bin\Debug\netcoreapp3.1\AuthenticationUsers.Business.dll
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\bin\Debug\netcoreapp3.1\AuthenticationUsers.Data.dll
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\bin\Debug\netcoreapp3.1\AuthenticationUsers.Business.pdb
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\bin\Debug\netcoreapp3.1\AuthenticationUsers.Data.pdb
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\obj\Debug\netcoreapp3.1\authenticationUsers.Application.csproj.AssemblyReference.cache
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\obj\Debug\netcoreapp3.1\authenticationUsers.Application.AssemblyInfoInputs.cache
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\obj\Debug\netcoreapp3.1\authenticationUsers.Application.AssemblyInfo.cs
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\obj\Debug\netcoreapp3.1\authenticationUsers.Application.csproj.CoreCompileInputs.cache
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\obj\Debug\netcoreapp3.1\authenticationUsers.Application.csproj.CopyComplete
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\obj\Debug\netcoreapp3.1\authenticationUsers.Application.dll
+C:\Users\ModalGR\Desktop\AuthenticationUsers.API\authenticationUsers.Application\obj\Debug\netcoreapp3.1\authenticationUsers.Application.pdb

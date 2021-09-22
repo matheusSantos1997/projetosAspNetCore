@@ -2824,7 +2824,7 @@
       ]
     },
     "System.ComponentModel.TypeConverter/4.3.0": {
-      "sha512": "16pQ6P+EdhcXzPiEK4kbA953Fu0MNG2ovxTZU81/qsCd1zPRsKc3uif5NgvllCY598k6bI0KUyKW8fanlfaDQg==",
+      "sha512": "HZiP0DwTHJ+C+rdFqP47nBYUh5283kcwXIGY2zOVVhsJmVI/2tYiX2zNRdjRQRHsTox58Ydkec6h0pWSh8wAsw==",
       "type": "package",
       "path": "system.componentmodel.typeconverter/4.3.0",
       "files": [
@@ -4603,7 +4603,7 @@
       ]
     },
     "System.Runtime.Serialization.Primitives/4.3.0": {
-      "sha512": "2Z5t70a2SwMsfQDp9KOclaZNyQhfIga2gppq9lIUDM1A4ohTshn4JqT7ir8bvIhXgorWKYDAr6rPzEbi/nTGKg==",
+      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
       "type": "package",
       "path": "system.runtime.serialization.primitives/4.3.0",
       "files": [
@@ -5437,23 +5437,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mathe\\.nuget\\packages\\": {},
+    "C:\\Users\\ModalGR\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mathe\\source\\repos\\AuthenticationUsers.API\\authenticationUsers.Application\\authenticationUsers.Application.csproj",
+      "projectUniqueName": "C:\\Users\\ModalGR\\Desktop\\AuthenticationUsers.API\\authenticationUsers.Application\\authenticationUsers.Application.csproj",
       "projectName": "authenticationUsers.Application",
-      "projectPath": "C:\\Users\\mathe\\source\\repos\\AuthenticationUsers.API\\authenticationUsers.Application\\authenticationUsers.Application.csproj",
-      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mathe\\source\\repos\\AuthenticationUsers.API\\authenticationUsers.Application\\obj\\",
+      "projectPath": "C:\\Users\\ModalGR\\Desktop\\AuthenticationUsers.API\\authenticationUsers.Application\\authenticationUsers.Application.csproj",
+      "packagesPath": "C:\\Users\\ModalGR\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ModalGR\\Desktop\\AuthenticationUsers.API\\authenticationUsers.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ModalGR\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5467,11 +5467,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\mathe\\source\\repos\\AuthenticationUsers.API\\AuthenticationUsers.Business\\AuthenticationUsers.Business.csproj": {
-              "projectPath": "C:\\Users\\mathe\\source\\repos\\AuthenticationUsers.API\\AuthenticationUsers.Business\\AuthenticationUsers.Business.csproj"
+            "C:\\Users\\ModalGR\\Desktop\\AuthenticationUsers.API\\AuthenticationUsers.Business\\AuthenticationUsers.Business.csproj": {
+              "projectPath": "C:\\Users\\ModalGR\\Desktop\\AuthenticationUsers.API\\AuthenticationUsers.Business\\AuthenticationUsers.Business.csproj"
             },
-            "C:\\Users\\mathe\\source\\repos\\AuthenticationUsers.API\\AuthenticationUsers.Data\\AuthenticationUsers.Data.csproj": {
-              "projectPath": "C:\\Users\\mathe\\source\\repos\\AuthenticationUsers.API\\AuthenticationUsers.Data\\AuthenticationUsers.Data.csproj"
+            "C:\\Users\\ModalGR\\Desktop\\AuthenticationUsers.API\\AuthenticationUsers.Data\\AuthenticationUsers.Data.csproj": {
+              "projectPath": "C:\\Users\\ModalGR\\Desktop\\AuthenticationUsers.API\\AuthenticationUsers.Data\\AuthenticationUsers.Data.csproj"
             }
           }
         }
@@ -5510,7 +5510,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
