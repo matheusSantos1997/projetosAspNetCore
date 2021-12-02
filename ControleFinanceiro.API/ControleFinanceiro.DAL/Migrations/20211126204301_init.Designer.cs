@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ControleFinanceiro.DAL.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20210714005123_criacaoBancoDados")]
-    partial class criacaoBancoDados
+    [Migration("20211126204301_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -121,7 +121,7 @@ namespace ControleFinanceiro.DAL.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
-                    b.Property<string>("UsurioId")
+                    b.Property<string>("UsuarioId")
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
@@ -136,7 +136,7 @@ namespace ControleFinanceiro.DAL.Migrations
 
                     b.HasIndex("MesId");
 
-                    b.HasIndex("UsurioId");
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Despesas");
                 });
@@ -176,16 +176,16 @@ namespace ControleFinanceiro.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "2fc59a3e-3798-46f5-9c94-76fda3ae4fb1",
-                            ConcurrencyStamp = "ee382f0d-766c-41e4-9f83-71f010853486",
+                            Id = "44f449ed-a351-4f6f-a9be-de2ba793780f",
+                            ConcurrencyStamp = "07d443b3-8a04-4f67-83e8-0670e9bf1e29",
                             Descricao = "Administrador do Sistema",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "3076922e-8cc7-447a-b799-45435c8fdb2c",
-                            ConcurrencyStamp = "9f722d01-c1e0-43ca-832a-75fb9f6d6649",
+                            Id = "0138bbb4-578b-4d04-9aed-51ac411910ad",
+                            ConcurrencyStamp = "37fc39e2-922f-4f76-b11a-1e3623fc9ecd",
                             Descricao = "Usuário do Sistema",
                             Name = "Usuario",
                             NormalizedName = "USUARIO"
@@ -573,7 +573,7 @@ namespace ControleFinanceiro.DAL.Migrations
 
                     b.HasOne("ControleFinanceiro.BLL.Models.Usuario", "Usuario")
                         .WithMany("Despesas")
-                        .HasForeignKey("UsurioId")
+                        .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
                 });

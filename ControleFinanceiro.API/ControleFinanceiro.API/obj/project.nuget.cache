@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bTxO1RZsjSN1nV45AqT70d30eDB/rKD+vaQ/vEzb7iNifoH1mbH8zu1sE5P2tszaDPE1reWHv6jIbVQyWlbHLA==",
+  "dgSpecHash": "pHXDaoeyJymZkVEATu+cw+o1zni9tirK2wSeYdja4Du8YKBnQSms/nL1yl87bUJ7OSUeAXx6Wk299Uy/oGZZmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
+  "projectFilePath": "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.api\\ControleFinanceiro.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathe\\.nuget\\packages\\fluentvalidation\\9.2.0\\fluentvalidation.9.2.0.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\fluentvalidation.aspnetcore\\9.2.0\\fluentvalidation.aspnetcore.9.2.0.nupkg.sha512",

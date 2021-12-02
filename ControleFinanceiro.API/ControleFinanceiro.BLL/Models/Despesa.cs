@@ -30,7 +30,7 @@ namespace ControleFinanceiro.BLL.Models
 
         public int Ano { get; set; }
 
-        public string UsurioId { get; set; }
+        public string UsuarioId { get; set; }
 
         public Usuario Usuario { get; set; }
     }

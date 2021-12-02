@@ -7,3 +7,4 @@ C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\n
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.csproj.CoreCompileInputs.cache
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.dll
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.pdb
+C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.BLL\obj\Debug\netcoreapp3.1\ControleFinanceiro.BLL.GeneratedMSBuildEditorConfig.editorconfig

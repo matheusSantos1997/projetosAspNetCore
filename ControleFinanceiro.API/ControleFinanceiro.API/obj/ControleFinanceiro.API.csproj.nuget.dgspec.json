@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj": {}
+    "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.api\\ControleFinanceiro.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj": {
+    "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.api\\ControleFinanceiro.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.api\\ControleFinanceiro.API.csproj",
         "projectName": "ControleFinanceiro.API",
-        "projectPath": "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.API\\ControleFinanceiro.API.csproj",
+        "projectPath": "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.api\\ControleFinanceiro.API.csproj",
         "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.API\\obj\\",
+        "outputPath": "C:\\Users\\mathe\\Desktop\\ControleFinanceiro.API\\ControleFinanceiro.api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -103,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -170,7 +170,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -257,7 +257,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

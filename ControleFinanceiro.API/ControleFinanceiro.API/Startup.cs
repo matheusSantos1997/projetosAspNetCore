@@ -1,11 +1,9 @@
 using ControleFinanceiro.API.Extensions;
+using ControleFinanceiro.API.Ioc;
 using ControleFinanceiro.API.Validacoes;
 using ControleFinanceiro.API.ViewModels;
 using ControleFinanceiro.BLL.Models;
 using ControleFinanceiro.DAL;
-using ControleFinanceiro.DAL.Interfaces;
-using ControleFinanceiro.DAL.Repositories;
-using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -48,23 +46,12 @@ namespace ControleFinanceiro.API
 
             services.ConfigurarSenhaUsuario();
 
-            // escopo interfaces e repositorios
-            services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
-            services.AddScoped<ITipoRepositorio, TipoRepositorio>();
-            services.AddScoped<IFuncaoRepositorio, FuncaoRepositorio>();
-            services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
-            services.AddScoped<ICartaoRepositorio, CartaoRepositorio>();
-
-            // chamando o fluent validation
-            services.AddTransient<IValidator<Categoria>, CategoriaValidator>(); // validaçao de Categoria
-            services.AddTransient<IValidator<FuncoesViewModel>, FuncoesValidator>(); // validaçao de Funcao
-            services.AddTransient<IValidator<RegistroViewModel>, RegistroValidator>(); // validaçao registro usuario
-            services.AddTransient<IValidator<LoginViewModel>, LoginValidator>(); // validaçao login usuario
-            services.AddTransient<IValidator<Cartao>, CartaoValidator>(); // validaçao cartao usuario
+            // configuraÃ§ao Scopeds
+            RepositoryInjector.RegisterRepositories(services);
 
             services.AddCors(); // habilita o cors
 
-            //configurando arquivos estáticos do angular spa
+            //configurando arquivos estÃ¡ticos do angular spa
             services.AddSpaStaticFiles(diretory =>
             {
                 diretory.RootPath = "ControleFinanceiro-UI"; // caminho do projeto angular
@@ -79,7 +66,7 @@ namespace ControleFinanceiro.API
             })
             .AddJwtBearer(opcoes =>
             {
-                opcoes.RequireHttpsMetadata = false; // nao será necessario o uso do https
+                opcoes.RequireHttpsMetadata = false; // nao serï¿½ necessario o uso do https
                 opcoes.SaveToken = true; // salva o token
                 opcoes.TokenValidationParameters = new TokenValidationParameters
                 {
@@ -111,7 +98,7 @@ namespace ControleFinanceiro.API
                 app.UseDeveloperExceptionPage();
             }
 
-            // pode ser qualque origem. metodo e cabeçalho
+            // pode ser qualque origem. metodo e cabeï¿½alho
             app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseHttpsRedirection();

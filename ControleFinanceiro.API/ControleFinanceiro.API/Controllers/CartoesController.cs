@@ -3,9 +3,7 @@ using ControleFinanceiro.DAL.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ControleFinanceiro.API.Controllers
@@ -16,9 +14,13 @@ namespace ControleFinanceiro.API.Controllers
     public class CartoesController : ControllerBase
     {
         private readonly ICartaoRepositorio _cartaoRepositorio;
-        public CartoesController(ICartaoRepositorio cartaoRepositorio)
+
+        private readonly IDespesaRepositorio _despesaRepositorio;
+
+        public CartoesController(ICartaoRepositorio cartaoRepositorio, IDespesaRepositorio despesaRepositorio)
         {
             _cartaoRepositorio = cartaoRepositorio;
+            _despesaRepositorio = despesaRepositorio;
         }
 
         [HttpGet("PegarCartoesPeloUsuarioId/{usuarioId}")]
@@ -81,6 +83,10 @@ namespace ControleFinanceiro.API.Controllers
             {
                 return NotFound();
             }
+
+            IEnumerable<Despesa> despesas = await _despesaRepositorio.PegarDespesasPeloCartaoId(cartao.CartaoId);
+
+            _despesaRepositorio.ExcluirDespesas(despesas);
 
             await _cartaoRepositorio.Excluir(cartao);
 

@@ -1,12 +1,9 @@
 ﻿using ControleFinanceiro.BLL.Models;
-using ControleFinanceiro.DAL;
 using ControleFinanceiro.DAL.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace ControleFinanceiro.API.Controllers
@@ -97,6 +94,13 @@ namespace ControleFinanceiro.API.Controllers
         public async Task<ActionResult<IEnumerable<Categoria>>> FiltrarCategorias(string nomeCategoria)
         {
             return await _categoriaRepositorio.FiltrarCategorias(nomeCategoria).ToListAsync();
+        }
+
+        [Authorize]
+        [HttpGet("FiltrarCategoriasDespesas")]
+        public async Task<ActionResult<IEnumerable<Categoria>>> FiltrarCategoriasDespesas()
+        {
+            return await _categoriaRepositorio.PegarCategoriasPeloTipo("Despesa").ToListAsync();
         }
 
 

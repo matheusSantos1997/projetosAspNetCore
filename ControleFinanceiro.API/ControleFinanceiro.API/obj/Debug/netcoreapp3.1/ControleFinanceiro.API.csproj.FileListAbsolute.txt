@@ -85,3 +85,4 @@ C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\bin\Debug\n
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\ControleFinanceiro.API.GeneratedMSBuildEditorConfig.editorconfig

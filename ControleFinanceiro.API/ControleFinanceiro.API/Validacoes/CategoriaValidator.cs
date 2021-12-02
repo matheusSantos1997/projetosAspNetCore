@@ -21,7 +21,7 @@ namespace ControleFinanceiro.API.Validacoes
                    .NotNull().WithMessage("Preencha o icone")
                    .NotEmpty().WithMessage("Preencha o icone")
                    .MinimumLength(1).WithMessage("Use mais caracteres")
-                   .MaximumLength(30).WithMessage("Use menos que 50 caracteres");
+                   .MaximumLength(15).WithMessage("Use menos que 50 caracteres");
 
             RuleFor(c => c.TipoId)
                    .NotNull().WithMessage("Escolha o tipo da categoria")

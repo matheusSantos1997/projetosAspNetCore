@@ -13,3 +13,4 @@ C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.DAL\obj\Debug\n
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.DAL\bin\Debug\netcoreapp3.1\ControleFinanceiro.DAL.runtimeconfig.json
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.DAL\bin\Debug\netcoreapp3.1\ControleFinanceiro.DAL.runtimeconfig.dev.json
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.DAL\obj\Debug\netcoreapp3.1\ControleFinanceiro.DAL.genruntimeconfig.cache
+C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.DAL\obj\Debug\netcoreapp3.1\ControleFinanceiro.DAL.GeneratedMSBuildEditorConfig.editorconfig

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ControleFinanceiro.DAL.Migrations
 {
-    public partial class criacaoBancoDados : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -274,7 +274,7 @@ namespace ControleFinanceiro.DAL.Migrations
                     Dia = table.Column<int>(nullable: false),
                     MesId = table.Column<int>(nullable: false),
                     Ano = table.Column<int>(nullable: false),
-                    UsurioId = table.Column<string>(nullable: false)
+                    UsuarioId = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
@@ -298,8 +298,8 @@ namespace ControleFinanceiro.DAL.Migrations
                         principalColumn: "MesId",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Despesas_Usuarios_UsurioId",
-                        column: x => x.UsurioId,
+                        name: "FK_Despesas_Usuarios_UsuarioId",
+                        column: x => x.UsuarioId,
                         principalTable: "Usuarios",
                         principalColumn: "Id");
                 });
@@ -337,8 +337,8 @@ namespace ControleFinanceiro.DAL.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Descricao", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "2fc59a3e-3798-46f5-9c94-76fda3ae4fb1", "ee382f0d-766c-41e4-9f83-71f010853486", "Administrador do Sistema", "Administrador", "ADMINISTRADOR" },
-                    { "3076922e-8cc7-447a-b799-45435c8fdb2c", "9f722d01-c1e0-43ca-832a-75fb9f6d6649", "Usuário do Sistema", "Usuario", "USUARIO" }
+                    { "44f449ed-a351-4f6f-a9be-de2ba793780f", "07d443b3-8a04-4f67-83e8-0670e9bf1e29", "Administrador do Sistema", "Administrador", "ADMINISTRADOR" },
+                    { "0138bbb4-578b-4d04-9aed-51ac411910ad", "37fc39e2-922f-4f76-b11a-1e3623fc9ecd", "Usuário do Sistema", "Usuario", "USUARIO" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -399,9 +399,9 @@ namespace ControleFinanceiro.DAL.Migrations
                 column: "MesId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Despesas_UsurioId",
+                name: "IX_Despesas_UsuarioId",
                 table: "Despesas",
-                column: "UsurioId");
+                column: "UsuarioId");
 
             migrationBuilder.CreateIndex(
                 name: "RoleNameIndex",
