@@ -23,7 +23,7 @@ namespace ControleFinanceiro.API.Controllers
 
         // pegar pelo id
         [HttpGet("{id}")]
-        public async Task<ActionResult<Usuario>> GetUsuario(string id)
+        public async Task<ActionResult<AtualizarUsuarioViewModel>> GetUsuario(string id)
         {
             var usuario = await _usuarioRepositorio.PegarPeloId(id);
 
@@ -32,7 +32,17 @@ namespace ControleFinanceiro.API.Controllers
                 return NotFound();
             }
 
-            return Ok(usuario);
+            AtualizarUsuarioViewModel model = new AtualizarUsuarioViewModel
+            {
+                Id = usuario.Id,
+                UserName = usuario.UserName,
+                Email = usuario.Email,
+                CPF = usuario.CPF,
+                Profissao = usuario.Profissao,
+                Foto = usuario.Foto
+            };
+
+            return model;
         }
 
         // upload de foto
@@ -155,6 +165,37 @@ namespace ControleFinanceiro.API.Controllers
             }
 
             return NotFound("Usuário e/ou senha inválidos!");
-        } 
+        }
+
+        [HttpGet("RetornarFotoUsuario/{usuarioId}")]
+        public async Task<dynamic> RetornarFotoUsuario(string usuarioId)
+        {
+            Usuario usuario = await _usuarioRepositorio.PegarPeloId(usuarioId);
+
+            return new { imagem = usuario.Foto };
+        }
+
+        [HttpPut("AtualizarUsuario")]
+        public async Task<ActionResult> AtualizarUsuario(AtualizarUsuarioViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                Usuario usuario = await _usuarioRepositorio.PegarPeloId(model.Id);
+                usuario.UserName = model.UserName;
+                usuario.Email = model.Email;
+                usuario.CPF = model.CPF;
+                usuario.Profissao = model.Profissao;
+                usuario.Foto = model.Foto;
+
+                await _usuarioRepositorio.AtualizarUsuario(usuario);
+
+                return Ok(new 
+                {
+                    mensagem = $"Usuário {usuario.Email} atualizado com sucesso" 
+                });
+            }
+
+            return BadRequest(model);
+        }
     }
 }

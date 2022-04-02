@@ -25,6 +25,18 @@ namespace ControleFinanceiro.DAL.Repositories
             
         }
 
+        public async Task AtualizarUsuario(Usuario usuario)
+        {
+            try
+            {
+                await _gerenciadorUsuarios.UpdateAsync(usuario);
+            }
+            catch (Exception ex)
+            {
+                 throw ex;
+            }
+        }
+
         public async Task<IdentityResult> CriarUsuario(Usuario usuario, string senha)
         {
             try

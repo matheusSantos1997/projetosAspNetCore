@@ -39,7 +39,8 @@ namespace ControleFinanceiro.API
         {
             services.AddDbContext<Contexto>(options =>
             {
-                options.UseSqlServer(Configuration.GetConnectionString("ConexaoDB"));
+                string conn = Configuration.GetConnectionString("ConexaoDB");
+                options.UseSqlServer(conn);
             });
 
             services.AddIdentity<Usuario, Funcao>().AddEntityFrameworkStores<Contexto>();
@@ -101,7 +102,7 @@ namespace ControleFinanceiro.API
             // pode ser qualque origem. metodo e cabe�alho
             app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
-            app.UseHttpsRedirection();
+            // app.UseHttpsRedirection();
 
             app.UseRouting();
 

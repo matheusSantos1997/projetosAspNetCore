@@ -17,6 +17,8 @@ namespace ControleFinanceiro.DAL.Interfaces
 
         IQueryable<Despesa> FiltrarDespesas(string nomeCategoria);
 
+        Task<double> PegarDespesaTotalPorUsuarioId(string usuarioId);
+
 
     }
 }

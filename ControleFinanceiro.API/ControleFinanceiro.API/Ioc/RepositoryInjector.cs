@@ -5,10 +5,6 @@ using ControleFinanceiro.DAL.Interfaces;
 using ControleFinanceiro.DAL.Repositories;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace ControleFinanceiro.API.Ioc
 {
@@ -24,14 +20,18 @@ namespace ControleFinanceiro.API.Ioc
             services.AddScoped<IFuncaoRepositorio, FuncaoRepositorio>();
             services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddScoped<ICartaoRepositorio, CartaoRepositorio>();
+            services.AddScoped<IGanhosRepositorio, GanhoRepositorio>();
+            services.AddScoped<IGraficoRepositorio, GraficoRepositorio>();
 
             // chamando o fluent validation
             services.AddTransient<IValidator<Categoria>, CategoriaValidator>(); // validaçao de Categoria
             services.AddTransient<IValidator<FuncoesViewModel>, FuncoesValidator>(); // validaçao de Funcao
             services.AddTransient<IValidator<RegistroViewModel>, RegistroValidator>(); // validaçao registro usuario
             services.AddTransient<IValidator<LoginViewModel>, LoginValidator>(); // validaçao login usuario
+            services.AddTransient<IValidator<AtualizarUsuarioViewModel>, AtualizarUsuarioViewModelValidator>(); // validaçao atualizar usuario
             services.AddTransient<IValidator<Cartao>, CartaoValidator>(); // validaçao cartao usuario
-            services.AddTransient<IValidator<Despesa>, DespesaValidator>(); // validacçao despesa
+            services.AddTransient<IValidator<Despesa>, DespesaValidator>(); // validaçao despesa
+            services.AddTransient<IValidator<Ganho>, GanhoValidator>();
         }
     }
 }

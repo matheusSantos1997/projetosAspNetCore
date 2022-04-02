@@ -35,8 +35,6 @@ C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\n
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\ControleFinanceiro.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\ControleFinanceiro.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\staticwebassets\ControleFinanceiro.API.StaticWebAssets.Manifest.cache
-C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\staticwebassets\ControleFinanceiro.API.StaticWebAssets.xml
-C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\scopedcss\bundle\ControleFinanceiro.API.styles.css
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\ControleFinanceiro.API.RazorTargetAssemblyInfo.cache
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\ControleFinanceiro.API.csproj.CopyComplete
 C:\Users\mathe\Desktop\ControleFinanceiro.API\ControleFinanceiro.API\obj\Debug\netcoreapp3.1\ControleFinanceiro.API.dll
