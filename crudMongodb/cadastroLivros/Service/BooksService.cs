@@ -2,45 +2,98 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using cadastroLivros.Connection;
 using cadastroLivros.Model;
-using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
 namespace cadastroLivros.Service
 {
-    public class BooksService
+    public class BooksService : IBooksService
     {
-          MongoDBContext _context = new MongoDBContext();
+         MongoDBContext _context = new MongoDBContext();
 
           public async Task<List<Book>> GetAsync() 
           {
-              // ordenando pelo nome
-             /* var filter = Builders<Book>.Filter.Empty;
-              var sort = Builders<Book>.Sort.Ascending("Name");
-              return await _context.Books.FindAsync(filter, new FindOptions<Book, Book>(){
-                  Sort = sort
-              }).GetAwaiter().GetResult().ToListAsync(); */
-              return await _context.Books.FindAsync(b => true).GetAwaiter().GetResult().ToListAsync();
+              try
+              {
+                  // ordenando pelo nome
+                 /* var filter = Builders<Book>.Filter.Empty;
+                    var sort = Builders<Book>.Sort.Ascending("Name");
+                   return await _context.Books.FindAsync(filter, new FindOptions<Book, Book>(){
+                   Sort = sort
+                   }).GetAwaiter().GetResult().ToListAsync(); */
+                   return await _context.Books.FindAsync(b => true).GetAwaiter().GetResult().ToListAsync();
+              }
+              catch (MongoException ex)
+              {
+                  throw new MongoException(ex.Message);
+              }
           }
           
           public async Task<Book> GetAsyncById(string id)
           {
-              return await _context.Books.FindAsync(x => x.Id.Equals(id)).GetAwaiter().GetResult().FirstOrDefaultAsync();
+              try
+              {
+                  return await _context.Books.FindAsync(x => x.Id.Equals(id)).GetAwaiter().GetResult().FirstOrDefaultAsync();
+              }
+              catch (MongoException ex)
+              {
+                  throw new MongoException(ex.Message);
+              }
+          }
+
+          public async Task<Book> GetAsyncByName(string name)
+          {
+              try
+              {
+                  var filter = Builders<Book>.Filter.Where(x => x.BookName.ToLower().Contains(name.ToLower()));
+                  var query = await _context.Books.FindAsync(filter);
+
+                  foreach (var result in await query.ToListAsync())
+                  {
+                     return result;
+                  }
+
+                  return null;
+              }
+              catch (MongoException ex)
+              {
+                  throw new MongoException(ex.Message);
+              }
           }
 
           public async Task CreateAsync(Book newBook) 
           {
-              await _context.Books.InsertOneAsync(newBook);
+              try
+              {
+                  await _context.Books.InsertOneAsync(newBook);
+              }
+              catch (MongoException ex)
+              {
+                  throw new MongoException(ex.Message);
+              }
           }
 
-          public async void UpdateAsync(string id, Book updatedBook)
+          public async Task UpdateAsync(string id, Book updatedBook)
           {
-              await _context.Books.ReplaceOneAsync(x => x.Id.Equals(id), updatedBook);
+              try
+              {
+                  await _context.Books.ReplaceOneAsync(x => x.Id.Equals(id), updatedBook);
+              }
+              catch (MongoException ex)
+              {
+                  throw new MongoException(ex.Message);
+              }
           }
 
-          public async void RemoveAsync(string id)
+          public async Task RemoveAsync(string id)
           {
-              await _context.Books.DeleteOneAsync(x => x.Id.Equals(id));
+              try
+              {
+                  await _context.Books.DeleteOneAsync(x => x.Id.Equals(id));
+              }
+              catch (MongoException ex)
+              {
+                  throw new MongoException(ex.Message);
+              }
           }
-          
     }
 }

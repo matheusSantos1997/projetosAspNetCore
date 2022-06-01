@@ -1,6 +1,4 @@
-using System;
 using cadastroLivros.Model;
-using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 
 namespace cadastroLivros.Connection
