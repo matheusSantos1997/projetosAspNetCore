@@ -1293,19 +1293,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mathe\\.nuget\\packages\\": {}
+    "C:\\Users\\Matheus\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\mathe\\Desktop\\uploadApi\\uploadApi\\uploadApi.csproj",
+      "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\uploadApi\\uploadApi\\uploadApi.csproj",
       "projectName": "uploadApi",
-      "projectPath": "c:\\Users\\mathe\\Desktop\\uploadApi\\uploadApi\\uploadApi.csproj",
-      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\mathe\\Desktop\\uploadApi\\uploadApi\\obj\\",
+      "projectPath": "C:\\Users\\Matheus\\Desktop\\uploadApi\\uploadApi\\uploadApi.csproj",
+      "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Matheus\\Desktop\\uploadApi\\uploadApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
