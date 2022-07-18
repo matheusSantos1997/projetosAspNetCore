@@ -42,7 +42,7 @@ namespace uploadApi.Controllers
         }
 
         [HttpPost("UploadFile")]
-        public IActionResult uploadFile(IFormFile file = null) 
+        public IActionResult ploadFile(IFormFile file = null) 
         {
             try
             {
@@ -166,7 +166,8 @@ namespace uploadApi.Controllers
                       arq.URLImagem = fullPath;
                       arq.SavedAt = DateTime.UtcNow;
 
-                      
+                      // atualiza o caminho da imagem
+                      Directory.Move(arquivo.URLImagem, arq.URLImagem);
 
                       // salva o arquivo
                       using (var stream = new FileStream(fullPath, FileMode.Create))

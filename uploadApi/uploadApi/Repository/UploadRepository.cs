@@ -20,6 +20,11 @@ namespace uploadApi.Repository
             _context.Add(entity);
         }
 
+        public void Update<T>(T entity) where T : class
+        {
+            _context.Update(entity);
+        }
+
         public void Delete<T>(T entity) where T : class
         {
             _context.Remove(entity);
@@ -47,9 +52,6 @@ namespace uploadApi.Repository
             return results;
         }
 
-        public void Update<T>(T entity) where T : class
-        {
-            _context.Update(entity);
-        }
+        
     }
 }
