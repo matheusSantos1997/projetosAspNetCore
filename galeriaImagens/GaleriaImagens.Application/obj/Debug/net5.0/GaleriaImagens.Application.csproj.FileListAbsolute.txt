@@ -1,0 +1,17 @@
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\bin\Debug\net5.0\GaleriaImagens.Application.deps.json
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\bin\Debug\net5.0\GaleriaImagens.Application.dll
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\bin\Debug\net5.0\ref\GaleriaImagens.Application.dll
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\bin\Debug\net5.0\GaleriaImagens.Application.pdb
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\bin\Debug\net5.0\GaleriaImagens.Business.dll
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\bin\Debug\net5.0\GaleriaImagens.Repository.dll
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\bin\Debug\net5.0\GaleriaImagens.Business.pdb
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\bin\Debug\net5.0\GaleriaImagens.Repository.pdb
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\obj\Debug\net5.0\GaleriaImagens.Application.csproj.AssemblyReference.cache
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\obj\Debug\net5.0\GaleriaImagens.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\obj\Debug\net5.0\GaleriaImagens.Application.AssemblyInfoInputs.cache
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\obj\Debug\net5.0\GaleriaImagens.Application.AssemblyInfo.cs
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\obj\Debug\net5.0\GaleriaImagens.Application.csproj.CoreCompileInputs.cache
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\obj\Debug\net5.0\GaleriaImagens.Application.csproj.CopyComplete
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\obj\Debug\net5.0\GaleriaImagens.Application.dll
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\obj\Debug\net5.0\ref\GaleriaImagens.Application.dll
+C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Application\obj\Debug\net5.0\GaleriaImagens.Application.pdb

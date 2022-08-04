@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "GaleriaImagens.Business/1.0.0": {
+        "runtime": {
+          "GaleriaImagens.Business.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GaleriaImagens.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
