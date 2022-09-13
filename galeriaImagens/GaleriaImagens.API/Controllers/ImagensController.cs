@@ -2,8 +2,10 @@ using System;
 using System.IO;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
+using GaleriaImagens.API.Extesions;
 using GaleriaImagens.Application.Interfaces;
 using GaleriaImagens.Business.Models;
+using GaleriaImagens.Repository.Pagination;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -27,13 +29,15 @@ namespace GaleriaImagens.API.Controllers
         }
 
         [HttpGet("GetAllImagens")]
-        public async Task<IActionResult> GetAllImagens()
+        public async Task<IActionResult> GetAllImagens([FromQuery]PageParams pageParams)
         {
             try
             {
-                var imagens = await _imagemService.ListarTodasImagens();
+                var imagens = await _imagemService.ListarTodasImagens(pageParams);
 
                 if(imagens == null) return NotFound();
+
+                Response.AddPagination(imagens.CurrentPage, imagens.PageSize, imagens.TotalCount, imagens.TotalPages);
 
                 return Ok(imagens);
             }
@@ -45,13 +49,15 @@ namespace GaleriaImagens.API.Controllers
         }
         
         [HttpGet("GetAllImagensByUsuarioId/{usuarioId}")]
-        public async Task<IActionResult> GetAllImagensByUsuarioId(long usuarioId)
+        public async Task<IActionResult> GetAllImagensByUsuarioId(long usuarioId, [FromQuery] PageParams pageParams)
         {
             try
             {
-                var imagens = await _imagemService.ListarImagensPorUsuarioId(usuarioId);
+                var imagens = await _imagemService.ListarImagensPorUsuarioId(usuarioId, pageParams);
 
                 if(imagens == null) return NotFound();
+
+                Response.AddPagination(imagens.CurrentPage, imagens.PageSize, imagens.TotalCount, imagens.TotalPages);
 
                 return Ok(imagens);
             }
@@ -126,7 +132,6 @@ namespace GaleriaImagens.API.Controllers
                       img.SavedAt = DateTime.UtcNow;
                       img.UsuarioId = Convert.ToInt64(usuarioId);
 
-                      var bytes = Convert.FromBase64String(fullPath);
                       // salva o arquivo
                       using (var stream = new FileStream(fullPath, FileMode.Create))
                       {
@@ -167,6 +172,11 @@ namespace GaleriaImagens.API.Controllers
         {
             try
             {
+                if (file is null)
+                {
+                    throw new ArgumentNullException(nameof(file));
+                }
+
                 bool extensaoValida = false;
 
                 string[] extensions = { ".jpeg", ".jpg", ".png" };

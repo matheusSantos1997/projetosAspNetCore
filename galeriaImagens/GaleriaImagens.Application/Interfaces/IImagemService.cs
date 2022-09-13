@@ -1,15 +1,16 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using GaleriaImagens.Business.Models;
+using GaleriaImagens.Repository.Pagination;
 using Microsoft.AspNetCore.Http;
 
 namespace GaleriaImagens.Application.Interfaces
 {
     public interface IImagemService
     {
-        Task<List<Imagem>> ListarTodasImagens();
+        Task<PageList<Imagem>> ListarTodasImagens(PageParams pageParams);
 
-        Task<List<Imagem>> ListarImagensPorUsuarioId(long usuarioId);
+        Task<PageList<Imagem>> ListarImagensPorUsuarioId(long usuarioId, PageParams pageParams);
 
         Task<Imagem> PegarImagemId(long id);
 

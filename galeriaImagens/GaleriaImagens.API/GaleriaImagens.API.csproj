@@ -27,4 +27,8 @@
     <ProjectReference Include="..\GaleriaImagens.Application\GaleriaImagens.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+
 </Project>

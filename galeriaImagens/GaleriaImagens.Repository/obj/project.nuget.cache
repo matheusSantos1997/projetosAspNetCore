@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lI9YsnDxsrWLEYlOw6sUo0qNqPTzs35UBZzeYWi/4s4iTRC5WvQShH6aRCG5FuhV+CvJqPMvBAAyO2D7D5szeQ==",
+  "dgSpecHash": "NTF4IX0NvOXyllU08178bthetcNMBKCn3EC4bCPk9a0Kvk+Yaok80EMoNAdiuEM+QqR/Fygfg6OOLTpGMY1zIw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
+  "projectFilePath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matheus\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -47,8 +47,7 @@
     "C:\\Users\\Matheus\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.1\\system.diagnostics.diagnosticsource.5.0.1.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
-    "C:\\Users\\Matheus\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
-    "C:\\Users\\Matheus\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+    "C:\\Users\\Matheus\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

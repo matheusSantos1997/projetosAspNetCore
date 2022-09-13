@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using GaleriaImagens.API.Injectors;
 using GaleriaImagens.Repository.Context;
@@ -43,6 +44,8 @@ namespace GaleriaImagens.API
                     .AddJsonOptions(options => 
                     {
                         options.JsonSerializerOptions.IgnoreNullValues = true; // api ignora os valores nulos
+                        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()); 
+                        // trata o retorno de enums mostrando os textos em vez das chaves
                     })
                     .AddNewtonsoftJson(options => 
                     {
@@ -85,10 +88,9 @@ namespace GaleriaImagens.API
             // configuraçao Scopeds
             RepositoryInjector.RegisterRepositories(services);
 
-            services.AddCors(c => 
-            {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-            });
+            services.AddCors(x => x.AddDefaultPolicy(builder => {
+                builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+            }));
 
             var key = Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Secret").Value);
             services.AddAuthentication(x =>

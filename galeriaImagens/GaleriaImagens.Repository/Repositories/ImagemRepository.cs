@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using GaleriaImagens.Business.Models;
 using GaleriaImagens.Repository.Context;
 using GaleriaImagens.Repository.Interfaces;
+using GaleriaImagens.Repository.Pagination;
 using Microsoft.EntityFrameworkCore;
 
 namespace GaleriaImagens.Repository.Repositories
@@ -18,14 +19,14 @@ namespace GaleriaImagens.Repository.Repositories
             _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
-        public async Task<List<Imagem>> GetAllImagens()
+        public async Task<PageList<Imagem>> GetAllImagens(PageParams pageParams)
         {
             IQueryable<Imagem> query = _context.Imagens.AsNoTracking();
 
 
             query = query.Include(i => i.Usuario).OrderBy(i => i.Id);
 
-            return await query.ToListAsync();
+            return await PageList<Imagem>.CreateAsync(query, pageParams.PageNumber, pageParams.pageSize);
         }
 
         public async Task<Imagem> GetImagemById(long id)
@@ -37,13 +38,13 @@ namespace GaleriaImagens.Repository.Repositories
             return await query.FirstOrDefaultAsync();
         }
 
-        public async Task<List<Imagem>> GetImagensUsuarioId(long usuarioId)
+        public async Task<PageList<Imagem>> GetImagensUsuarioId(long usuarioId, PageParams pageParams)
         {
             IQueryable<Imagem> query = _context.Imagens.AsNoTracking();
             
-            query = query.Where(i => i.UsuarioId == usuarioId);
+            query = query.Include(i => i.Usuario).Where(i => i.UsuarioId == usuarioId);
 
-            return await query.ToListAsync();
+            return await PageList<Imagem>.CreateAsync(query, pageParams.PageNumber, pageParams.pageSize);
         }
     }
 }

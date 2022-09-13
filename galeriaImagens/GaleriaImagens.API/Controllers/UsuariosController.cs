@@ -33,9 +33,9 @@ namespace GaleriaImagens.API.Controllers
             {
                 var usuario = await _usuario.GetUserById(id);
 
-            if(usuario == null) return NotFound("Not Found User.");
+                if(usuario == null) return NotFound("Not Found User.");
 
-            return Ok(usuario);
+                return Ok(usuario);
             }
             catch(Exception ex)
             {
@@ -81,7 +81,7 @@ namespace GaleriaImagens.API.Controllers
                 {
                     emailUsuarioLogado = usuario.Email,
                     usuarioId = usuario.Id,
-                    token = token
+                    tokenUsuario = token
                 };
 
                 return Ok(obj);

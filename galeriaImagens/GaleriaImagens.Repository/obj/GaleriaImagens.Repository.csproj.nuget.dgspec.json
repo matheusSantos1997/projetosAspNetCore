@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {}
+    "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
+    "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
         "projectName": "GaleriaImagens.Business",
-        "projectPath": "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
+        "projectPath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\obj\\",
+        "outputPath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -56,30 +62,36 @@
         }
       }
     },
-    "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {
+    "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
         "projectName": "GaleriaImagens.Repository",
-        "projectPath": "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
+        "projectPath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\obj\\",
+        "outputPath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
-                "projectPath": "c:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj"
+              "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
+                "projectPath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj"
               }
             }
           }
@@ -137,10 +149,6 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[5.0.10, )"
-            },
-            "System.Security.Principal.Windows": {
-              "target": "Package",
-              "version": "[5.0.0, )"
             }
           },
           "imports": [

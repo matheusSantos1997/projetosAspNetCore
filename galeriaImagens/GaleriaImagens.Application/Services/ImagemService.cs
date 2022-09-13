@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using GaleriaImagens.Application.Interfaces;
 using GaleriaImagens.Business.Models;
 using GaleriaImagens.Repository.Interfaces;
+using GaleriaImagens.Repository.Pagination;
 
 namespace GaleriaImagens.Application.Services
 {
@@ -21,11 +22,11 @@ namespace GaleriaImagens.Application.Services
             _repositoryImagem = repositoryImagem;
         }
 
-        public async Task<List<Imagem>> ListarTodasImagens()
+        public async Task<PageList<Imagem>> ListarTodasImagens(PageParams pageParams)
         {
             try
             {
-                var imagens = await _repositoryImagem.GetAllImagens();
+                var imagens = await _repositoryImagem.GetAllImagens(pageParams);
 
                 if(imagens == null) return null;
 
@@ -37,11 +38,11 @@ namespace GaleriaImagens.Application.Services
             }
         }
 
-        public async Task<List<Imagem>> ListarImagensPorUsuarioId(long usuarioId)
+        public async Task<PageList<Imagem>> ListarImagensPorUsuarioId(long usuarioId, PageParams pageParams)
         {
             try
             {
-                var imagens = await _repositoryImagem.GetImagensUsuarioId(usuarioId);
+                var imagens = await _repositoryImagem.GetImagensUsuarioId(usuarioId, pageParams);
 
                 if(imagens == null) return null;
 
