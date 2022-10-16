@@ -88,9 +88,7 @@ namespace GaleriaImagens.API
             // configuraçao Scopeds
             RepositoryInjector.RegisterRepositories(services);
 
-            services.AddCors(x => x.AddDefaultPolicy(builder => {
-                builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
-            }));
+            services.AddCors();
 
             var key = Encoding.ASCII.GetBytes(Configuration.GetSection("AppSettings:Secret").Value);
             services.AddAuthentication(x =>

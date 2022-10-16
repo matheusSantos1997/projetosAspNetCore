@@ -25,7 +25,8 @@ namespace GaleriaImagens.API.Controllers
             _usuario = usuario;
         }
 
-        [HttpGet("GetUsuarioById/{id}")]
+        [HttpGet]
+        [Route("GetUsuarioById/{id}")]
         [Authorize]
         public async Task<IActionResult> GetUsuarioById(long id)
         {
@@ -72,7 +73,7 @@ namespace GaleriaImagens.API.Controllers
 
                 if(usuario == null)
                 {
-                    return NotFound(new { message = "Invalid Email or Password!"});
+                    return Unauthorized(new { message = "Invalid Email or Password!"});
                 }
 
                 var token = TokenService.GenerateToken(usuario, _config);

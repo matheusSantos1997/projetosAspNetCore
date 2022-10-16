@@ -143,15 +143,14 @@ namespace GaleriaImagens.API.Controllers
                    }
                    else
                    {
-                    if(extension != extensions.Length.ToString()) 
-                    {
-                       return BadRequest(new 
-                       {
-                           menssagem = $"only jpeg, jpg or png."
-                       });
+                        if (extension != extensions.Length.ToString())
+                        {
+                            return BadRequest(new
+                            {
+                                menssagem = $"only jpeg, jpg or png."
+                            });
+                        }
                     }
-                      
-                   }
  
                 }
 

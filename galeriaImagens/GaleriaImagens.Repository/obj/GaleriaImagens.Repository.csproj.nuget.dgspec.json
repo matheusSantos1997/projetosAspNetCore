@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {}
+    "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
+    "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
+        "projectUniqueName": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
         "projectName": "GaleriaImagens.Business",
-        "projectPath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
+        "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\obj\\",
+        "outputPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,21 +58,17 @@
         }
       }
     },
-    "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {
+    "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
+        "projectUniqueName": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
         "projectName": "GaleriaImagens.Repository",
-        "projectPath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
+        "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\obj\\",
+        "outputPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,8 +82,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
-                "projectPath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj"
+              "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
+                "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj"
               }
             }
           }

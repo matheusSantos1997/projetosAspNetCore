@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a5M8AR6Id/iGDyaCtH4G62nOpgG00I5dhWLFW42gizV+kbQtm1pdYiPcId0RtW1WKDN4DqK9LRc8MZ/8h2IpUg==",
+  "dgSpecHash": "i2Ak2VeZRYNTT3r7AFIAHRSXUc6AS6Lv1zGeiH3ENC/b92vtxh3LXV+l60PLmf8DC1djYnCbZwdu6nKN3Zd7wA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj",
+  "projectFilePath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matheus\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.17\\microsoft.aspnetcore.authentication.jwtbearer.5.0.17.nupkg.sha512",

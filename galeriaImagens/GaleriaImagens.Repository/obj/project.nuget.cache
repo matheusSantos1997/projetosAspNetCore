@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NTF4IX0NvOXyllU08178bthetcNMBKCn3EC4bCPk9a0Kvk+Yaok80EMoNAdiuEM+QqR/Fygfg6OOLTpGMY1zIw==",
+  "dgSpecHash": "P/6fT6zP15YAdtFtZkgH3NmYrdtO2VfhD4viHatjehg8kKAbTbjc87TxV2mhyeHsMQ8TxfteeWcPf7/VVTCStA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Matheus\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
+  "projectFilePath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matheus\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Matheus\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

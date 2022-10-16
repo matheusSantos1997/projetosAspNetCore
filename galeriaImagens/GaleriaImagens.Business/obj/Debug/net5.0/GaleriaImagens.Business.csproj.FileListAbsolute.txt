@@ -10,3 +10,15 @@ C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0
 C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\GaleriaImagens.Business.dll
 C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\ref\GaleriaImagens.Business.dll
 C:\Users\Matheus\Desktop\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\GaleriaImagens.Business.pdb
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\bin\Debug\net5.0\GaleriaImagens.Business.deps.json
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\bin\Debug\net5.0\GaleriaImagens.Business.dll
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\bin\Debug\net5.0\ref\GaleriaImagens.Business.dll
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\bin\Debug\net5.0\GaleriaImagens.Business.pdb
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\GaleriaImagens.Business.csproj.AssemblyReference.cache
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\GaleriaImagens.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\GaleriaImagens.Business.AssemblyInfoInputs.cache
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\GaleriaImagens.Business.AssemblyInfo.cs
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\GaleriaImagens.Business.csproj.CoreCompileInputs.cache
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\GaleriaImagens.Business.dll
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\ref\GaleriaImagens.Business.dll
+D:\Projetos\galeriaImagens\GaleriaImagens.Business\obj\Debug\net5.0\GaleriaImagens.Business.pdb
