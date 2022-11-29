@@ -8,6 +8,7 @@ namespace GaleriaImagens.Repository.Context
 {
     public class DataContext : DbContext
     {
+
         public DataContext(DbContextOptions<DataContext> options): base(options){}
 
         public virtual DbSet<Usuario> Usuarios { get; set; }
@@ -20,8 +21,10 @@ namespace GaleriaImagens.Repository.Context
                   .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
                   .AddJsonFile("appsettings.json")
                   .Build();
+
+            string localConnection = configuration.GetConnectionString("localConnection");
             
-            optionsBuilder.UseNpgsql(configuration.GetConnectionString("localConnection"));
+            optionsBuilder.UseNpgsql(localConnection);
         }
 
         protected override void OnModelCreating(ModelBuilder builder)

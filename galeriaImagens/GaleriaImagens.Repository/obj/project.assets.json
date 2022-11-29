@@ -1651,19 +1651,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Matheus\\.nuget\\packages\\": {}
+    "C:\\Users\\mathe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
       "projectName": "GaleriaImagens.Repository",
-      "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
-      "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\obj\\",
+      "projectPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
+      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1677,8 +1677,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
-              "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj"
+            "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
+              "projectPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj"
             }
           }
         }

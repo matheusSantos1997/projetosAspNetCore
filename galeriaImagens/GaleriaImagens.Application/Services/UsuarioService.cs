@@ -55,9 +55,9 @@ namespace GaleriaImagens.Application.Services
 
                 return null;
             }
-            catch (Exception ex)
+            catch (NullReferenceException ex)
             {
-                throw new Exception(ex.Message);
+                throw new NullReferenceException(ex.Message);
             }
         }
 

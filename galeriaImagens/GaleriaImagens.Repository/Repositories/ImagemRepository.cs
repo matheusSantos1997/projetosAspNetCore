@@ -42,7 +42,7 @@ namespace GaleriaImagens.Repository.Repositories
         {
             IQueryable<Imagem> query = _context.Imagens.AsNoTracking();
             
-            query = query.Include(i => i.Usuario).Where(i => i.UsuarioId == usuarioId);
+            query = query.Include(i => i.Usuario).Where(i => i.UsuarioId == usuarioId).OrderBy(i => i.Id);
 
             return await PageList<Imagem>.CreateAsync(query, pageParams.PageNumber, pageParams.pageSize);
         }

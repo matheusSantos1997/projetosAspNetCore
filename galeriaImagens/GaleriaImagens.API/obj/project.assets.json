@@ -2010,19 +2010,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Matheus\\.nuget\\packages\\": {}
+    "C:\\Users\\mathe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.API\\GaleriaImagens.API.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.API\\GaleriaImagens.API.csproj",
       "projectName": "GaleriaImagens.API",
-      "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.API\\GaleriaImagens.API.csproj",
-      "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.API\\obj\\",
+      "projectPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.API\\GaleriaImagens.API.csproj",
+      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2036,8 +2036,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj": {
-              "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj"
+            "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj": {
+              "projectPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj"
             }
           }
         }

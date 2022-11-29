@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj": {}
+    "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj": {
+    "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj",
         "projectName": "GaleriaImagens.Application",
-        "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj",
-        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Application\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Application\\GaleriaImagens.Application.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
-                "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj"
+              "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
+                "projectPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj"
               },
-              "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {
-                "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj"
+              "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {
+                "projectPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj"
               }
             }
           }
@@ -75,17 +75,17 @@
         }
       }
     },
-    "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
+    "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
         "projectName": "GaleriaImagens.Business",
-        "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
-        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -129,17 +129,17 @@
         }
       }
     },
-    "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {
+    "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
         "projectName": "GaleriaImagens.Repository",
-        "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
-        "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Repository\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\GaleriaImagens.Repository.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Matheus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -153,8 +153,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
-                "projectPath": "D:\\Projetos\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj"
+              "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj": {
+                "projectPath": "C:\\Users\\mathe\\Desktop\\galeriaImagens\\GaleriaImagens.Business\\GaleriaImagens.Business.csproj"
               }
             }
           }

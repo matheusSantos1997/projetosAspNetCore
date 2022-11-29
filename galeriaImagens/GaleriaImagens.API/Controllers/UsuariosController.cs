@@ -87,7 +87,7 @@ namespace GaleriaImagens.API.Controllers
 
                 return Ok(obj);
             }
-            catch(Exception ex)
+            catch(NullReferenceException ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, $"error when retrieving users. Error: {ex.Message}");
             }
