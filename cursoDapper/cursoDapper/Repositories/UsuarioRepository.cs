@@ -37,7 +37,7 @@ namespace cursoDapper.Repositories
                                                       LEFT JOIN UsuariosDepartamentos as UD ON UD.UsuarioId = U.Id 
                                                       LEFT JOIN Departamentos as D ON UD.DepartamentoId = D.Id";
 
-            return _connection.Query<Usuario, Contato, EnderecoEntrega, Departamento, Usuario>(sql,
+             _connection.Query<Usuario, Contato, EnderecoEntrega, Departamento, Usuario>(sql,
                 (usuario, contato, enderecoEntrega, departamento) =>
                 {
                     // verificaçao do usuario
@@ -68,7 +68,9 @@ namespace cursoDapper.Repositories
 
                     return usuario;
 
-                }).ToList();
+                });
+
+            return usuarios;
         }
 
         public Usuario GetUsuario(int id)
