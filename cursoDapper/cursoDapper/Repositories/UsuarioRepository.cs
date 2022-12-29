@@ -31,7 +31,11 @@ namespace cursoDapper.Repositories
             /* precisou ser feito dessa forma pois a tabela UsuariosDepartamentos nao possui model 
              * object para o dapper poder mapear assim retorna as informaçoes nulas
              * */
-            string sql = "SELECT U.*, C.*, EE.*, D.* FROM Usuarios as U LEFT JOIN Contatos as C ON C.UsuarioId = U.Id LEFT JOIN EnderecosEntrega as EE ON EE.UsuarioId = U.Id LEFT JOIN UsuariosDepartamentos as UD ON UD.UsuarioId = U.Id LEFT JOIN Departamentos as D ON UD.DepartamentoId = D.Id";
+            string sql = @"SELECT U.*, C.*, EE.*, D.* FROM Usuarios as U 
+                                                      LEFT JOIN Contatos as C ON C.UsuarioId = U.Id 
+                                                      LEFT JOIN EnderecosEntrega as EE ON EE.UsuarioId = U.Id 
+                                                      LEFT JOIN UsuariosDepartamentos as UD ON UD.UsuarioId = U.Id 
+                                                      LEFT JOIN Departamentos as D ON UD.DepartamentoId = D.Id";
 
             return _connection.Query<Usuario, Contato, EnderecoEntrega, Departamento, Usuario>(sql,
                 (usuario, contato, enderecoEntrega, departamento) =>
@@ -71,7 +75,11 @@ namespace cursoDapper.Repositories
         {
             List<Usuario> usuarios = new();
 
-            string sql = "SELECT U.*, C.*, EE.*, D.* FROM Usuarios as U LEFT JOIN Contatos as C ON C.UsuarioId = U.Id LEFT JOIN EnderecosEntrega as EE ON EE.UsuarioId = U.Id LEFT JOIN UsuariosDepartamentos as UD ON UD.UsuarioId = U.Id LEFT JOIN Departamentos as D ON UD.DepartamentoId = D.Id WHERE U.Id = @Id";
+            string sql = @"SELECT U.*, C.*, EE.*, D.* FROM Usuarios as U 
+                                                      LEFT JOIN Contatos as C ON C.UsuarioId = U.Id 
+                                                      LEFT JOIN EnderecosEntrega as EE ON EE.UsuarioId = U.Id 
+                                                      LEFT JOIN UsuariosDepartamentos as UD ON UD.UsuarioId = U.Id 
+                                                      LEFT JOIN Departamentos as D ON UD.DepartamentoId = D.Id WHERE U.Id = @Id";
 
             var result = _connection.Query<Usuario, Contato, EnderecoEntrega, Departamento, Usuario>(sql,
                 (usuario, contato, enderecoEntrega, departamento) => 
@@ -114,13 +122,16 @@ namespace cursoDapper.Repositories
 
             try
             {
-                string sql = "INSERT INTO Usuarios (Nome, Email, Sexo, RG, CPF, NomeMae, SituacaoCadastro, DataCadastro) VALUES (@Nome, @Email, @Sexo, @RG, @CPF, @NomeMae, @SituacaoCadastro, @DataCadastro); SELECT CAST(SCOPE_IDENTITY() AS INT);";
+                string sql = @"INSERT INTO Usuarios (Nome, Email, Sexo, RG, CPF, NomeMae, SituacaoCadastro, DataCadastro) 
+                                             VALUES (@Nome, @Email, @Sexo, @RG, @CPF, @NomeMae, @SituacaoCadastro, @DataCadastro); 
+                                             SELECT CAST(SCOPE_IDENTITY() AS INT);";
                 usuario.Id = _connection.Query<int>(sql, usuario, transaction).Single();
 
                 if (usuario.Contato != null)
                 {
                     usuario.Contato.UsuarioId = usuario.Id;
-                    string sqlContato = "INSERT INTO Contatos (UsuarioId, Telefone, Celular) VALUES (@UsuarioId, @Telefone, @Celular); SELECT CAST(SCOPE_IDENTITY() AS INT);";
+                    string sqlContato = "INSERT INTO Contatos (UsuarioId, Telefone, Celular) " +
+                        "                           VALUES (@UsuarioId, @Telefone, @Celular); SELECT CAST(SCOPE_IDENTITY() AS INT);";
                     usuario.Contato.Id = _connection.Query<int>(sqlContato, usuario.Contato, transaction).Single();
                 }
 
@@ -129,7 +140,10 @@ namespace cursoDapper.Repositories
                     foreach(var enderecoEntrega in usuario.EnderecosEntrega)
                     {
                         enderecoEntrega.UsuarioId = usuario.Id;
-                        string sqlEndereco = "INSERT INTO EnderecosEntrega (UsuarioId, NomeEndereco, CEP, Estado, Cidade, Bairro, Endereco, Numero, Complemento) VALUES (@UsuarioId, @NomeEndereco, @CEP, @Estado, @Cidade, @Bairro, @Endereco, @Numero, @Complemento); SELECT CAST(SCOPE_IDENTITY() AS INT);";
+                        string sqlEndereco = @"INSERT INTO EnderecosEntrega (UsuarioId, NomeEndereco, CEP, Estado, Cidade, Bairro, 
+                                                          Endereco, Numero, Complemento) VALUES 
+                                                          (@UsuarioId, @NomeEndereco, @CEP, @Estado, @Cidade, @Bairro, @Endereco, 
+                                                           @Numero, @Complemento); SELECT CAST(SCOPE_IDENTITY() AS INT);";
                         enderecoEntrega.Id = _connection.Query<int>(sqlEndereco, enderecoEntrega, transaction).Single();
                     }
                 }
@@ -138,7 +152,8 @@ namespace cursoDapper.Repositories
                 {
                     foreach(var departamento in usuario.Departamentos)
                     {
-                        string sqlUsuariosDepartamentos = "INSERT INTO UsuariosDepartamentos (UsuarioId, DepartamentoId) VALUES (@UsuarioId, @DepartamentoId)";
+                        string sqlUsuariosDepartamentos = "INSERT INTO UsuariosDepartamentos (UsuarioId, DepartamentoId) " +
+                            "                                         VALUES (@UsuarioId, @DepartamentoId)";
                         _connection.Execute(sqlUsuariosDepartamentos, new { UsuarioId = usuario.Id, DepartamentoId = departamento.Id }, transaction);
                     }
                 }

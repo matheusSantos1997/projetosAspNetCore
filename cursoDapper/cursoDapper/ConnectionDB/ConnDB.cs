@@ -12,8 +12,16 @@ namespace cursoDapper.ConnectionDB
     {
         public static IDbConnection GetConnection()
         {
-            string conn = "Password=root; Persist Security Info=true;User ID=sa;Initial Catalog=eCommerce;Data Source=DESKTOP-OJRVGVQ\\SQLEXPRESS";
-            return new SqlConnection(conn);
+            try
+            {
+                // string conn = "Password=root; Persist Security Info=true;User ID=sa;Initial Catalog=eCommerce;Data Source=DESKTOP-OJRVGVQ\\SQLEXPRESS";
+                return new SqlConnection(Base.STRINGCONEXAO);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            
         }   
         
     }
