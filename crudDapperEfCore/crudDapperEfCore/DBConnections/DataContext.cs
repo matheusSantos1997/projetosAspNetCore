@@ -3,9 +3,8 @@ using crudDapperEfCore.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace crudDapperEfCore.DBConnections
 {
@@ -27,6 +26,26 @@ namespace crudDapperEfCore.DBConnections
             string conn = configuration.GetConnectionString("localConnection");
 
             optionsBuilder.UseSqlServer(conn);
+        }
+
+        // dapper connection
+        public static IDbConnection GetConnetion()
+        {
+            try
+            {
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                  .SetBasePath(AppDomain.CurrentDomain.BaseDirectory)
+                  .AddJsonFile("appsettings.json")
+                  .Build();
+
+                string conn = configuration.GetConnectionString("localConnection");
+
+                return new SqlConnection(conn);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

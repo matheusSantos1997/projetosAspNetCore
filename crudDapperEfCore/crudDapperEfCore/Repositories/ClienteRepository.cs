@@ -16,7 +16,7 @@ namespace crudDapperEfCore.Repositories
 
         public ClienteRepository()
         {
-            _connection = DapperDbConnection.GetConnetion();
+            _connection = DataContext.GetConnetion();
         }
 
         public async Task<List<Cliente>> GetAllClientes()

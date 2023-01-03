@@ -34,7 +34,7 @@ namespace crudDapperEfCore
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>();
-            ConnectionString.StringConexao = Configuration["ConnectionStrings:localConnection"];
+           // ConnectionString.StringConexao = Configuration["ConnectionStrings:localConnection"];
 
             RepositoryInjector.RegisterRepositories(services);
 
