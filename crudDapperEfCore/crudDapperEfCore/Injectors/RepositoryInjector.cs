@@ -1,11 +1,10 @@
 ﻿using crudDapperEfCore.Interfaces;
+using crudDapperEfCore.Models;
 using crudDapperEfCore.Repositories;
 using crudDapperEfCore.Services;
+using crudDapperEfCore.Validations;
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace crudDapperEfCore.Injectors
 {
@@ -13,6 +12,7 @@ namespace crudDapperEfCore.Injectors
     {
         public static void RegisterRepositories(IServiceCollection services)
         {
+            // repositories, interfaces and services
             services.AddScoped<IGenericRepository, GenericRepository>();
             services.AddScoped<IClienteRepository, ClienteRepository>();
             services.AddScoped<IClienteService, ClienteService>();

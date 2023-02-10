@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FcTm5PUFl5IzoJFX7IdOCHN9zloNrXhnI31OuN3ZxPG1Es+4doDMjAgtt90cKnBrywOOcii8UbSbNRt+21CI7A==",
+  "dgSpecHash": "T6sJd/2xR09rHoVZmOH4HNE0YrP81y/qJMlJlomga/W8aug0RTinF1ozbcy7JWNpawnYgMFq87uDc7G+ZjIVTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mathe\\Desktop\\crudDapperEfCore\\crudDapperEfCore\\crudDapperEfCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mathe\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\mathe\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\mathe\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\mathe\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.14\\microsoft.aspnetcore.jsonpatch.5.0.14.nupkg.sha512",
     "C:\\Users\\mathe\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.14\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.14.nupkg.sha512",

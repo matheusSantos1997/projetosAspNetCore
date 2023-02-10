@@ -58,7 +58,6 @@ C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\runtim
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\crudDapperEfCore.csproj.AssemblyReference.cache
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Dapper.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\System.Data.SqlClient.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
@@ -69,3 +68,7 @@ C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\runtim
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\FluentValidation.dll
+C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\crudDapperEfCore.csproj.AssemblyReference.cache
+C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll

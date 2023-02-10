@@ -1,6 +1,7 @@
 ﻿using crudDapperEfCore.DBConnections;
 using crudDapperEfCore.Interfaces;
 using crudDapperEfCore.Models;
+using crudDapperEfCore.Repositories.DbScripts;
 using Dapper;
 using System;
 using System.Collections.Generic;
@@ -23,12 +24,12 @@ namespace crudDapperEfCore.Repositories
         {
             try
             {
-                List<Cliente> clientes = new List<Cliente>();
+                List<Cliente> clientes = new();
 
-                string sql = @"SELECT * FROM Clientes as c LEFT JOIN Produtos as p ON p.ClienteId = c.Id";
+                string query = ClienteQueriesString.SelectAllClientes();
 
-                await _connection.QueryAsync<Cliente, Produto, Cliente>(sql,
-                  (cliente, produto) =>
+                await _connection.QueryAsync<Cliente, Produto, Cliente>(query,
+                  map: (cliente, produto) =>
                   {
                       if (clientes.FirstOrDefault(u => u.Id == cliente.Id) == null)
                       {
@@ -57,12 +58,12 @@ namespace crudDapperEfCore.Repositories
         {
             try
             {
-                List<Cliente> clientes = new List<Cliente>();
+                List<Cliente> clientes = new();
 
-                string sql = @"SELECT * FROM Clientes as c LEFT JOIN Produtos as p ON p.ClienteId = c.Id WHERE c.Id = @Id";
+                string query = ClienteQueriesString.SelectClientePeloId();
 
-                var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(sql,
-                    (cliente, produto) =>
+                var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(query,
+                    map: (cliente, produto) =>
                     {
                         if (clientes.FirstOrDefault(u => u.Id == cliente.Id) == null)
                         {
@@ -91,13 +92,12 @@ namespace crudDapperEfCore.Repositories
         {
             try
             {
-                List<Cliente> clientes = new List<Cliente>();
+                List<Cliente> clientes = new();
 
-                string sql = @"SELECT * FROM Clientes as c LEFT JOIN Produtos as p 
-                                             ON p.ClienteId = c.Id WHERE c.NomeCliente LIKE @NomeCliente";
+                string query = ClienteQueriesString.FiltrarClientePorNome();
 
-                await _connection.QueryAsync<Cliente, Produto, Cliente>(sql,
-                   (cliente, produto) =>
+                await _connection.QueryAsync<Cliente, Produto, Cliente>(query,
+                   map: (cliente, produto) =>
                    {
                        if (clientes.FirstOrDefault(u => u.Id == cliente.Id) == null)
                        {
@@ -112,7 +112,7 @@ namespace crudDapperEfCore.Repositories
                        cliente.Produtos.Add(produto);
 
                        return cliente;
-                   }, new { NomeCliente = "%" + nome + "%" });
+                   }, new { NomeCliente = nome + "%" });
 
                 return clientes.ToList();
             }
