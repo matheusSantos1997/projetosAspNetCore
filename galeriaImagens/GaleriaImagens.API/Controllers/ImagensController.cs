@@ -129,7 +129,7 @@ namespace GaleriaImagens.API.Controllers
                       Imagem img = new Imagem();
                       img.Nome = fileName;
                       img.URLImagem = fullPath;
-                      img.SavedAt = DateTime.UtcNow;
+                      img.SavedAt = DateTime.Now;
                       img.UsuarioId = Convert.ToInt64(usuarioId);
 
                       // salva o arquivo

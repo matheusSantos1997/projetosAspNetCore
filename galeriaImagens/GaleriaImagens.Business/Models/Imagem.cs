@@ -15,6 +15,8 @@ namespace GaleriaImagens.Business.Models
         [Column(TypeName = "varchar(200)")]
         public string URLImagem { get; set; }
         
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? SavedAt { get; set; }
 
         public long? UsuarioId { get; set; }
