@@ -1,5 +1,6 @@
 ﻿using crudDapperEfCore.Interfaces;
 using crudDapperEfCore.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,9 +62,9 @@ namespace crudDapperEfCore.Services
 
                 return null;
             }
-            catch(Exception ex)
+            catch(DbUpdateConcurrencyException ex)
             {
-                throw new Exception(ex.Message);
+                throw new DbUpdateConcurrencyException(ex.Message);
             }
         }
 

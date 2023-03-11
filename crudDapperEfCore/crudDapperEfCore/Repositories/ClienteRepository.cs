@@ -28,7 +28,7 @@ namespace crudDapperEfCore.Repositories
 
                 string query = ClienteQueriesString.SelectAllClientes();
 
-                await _connection.QueryAsync<Cliente, Produto, Cliente>(query,
+                var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(query,
                   map: (cliente, produto) =>
                   {
                       if (clientes.FirstOrDefault(u => u.Id == cliente.Id) == null)
@@ -46,7 +46,9 @@ namespace crudDapperEfCore.Repositories
                       return cliente;
                   });
 
-                return clientes.ToList();
+                result = clientes;
+
+                return result.ToList();
             }
             catch (Exception ex)
             {
@@ -96,7 +98,7 @@ namespace crudDapperEfCore.Repositories
 
                 string query = ClienteQueriesString.FiltrarClientePorNome();
 
-                await _connection.QueryAsync<Cliente, Produto, Cliente>(query,
+                var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(query,
                    map: (cliente, produto) =>
                    {
                        if (clientes.FirstOrDefault(u => u.Id == cliente.Id) == null)
@@ -114,7 +116,9 @@ namespace crudDapperEfCore.Repositories
                        return cliente;
                    }, new { NomeCliente = nome + "%" });
 
-                return clientes.ToList();
+                result = clientes;
+
+                return result.ToList();
             }
             catch(Exception ex)
             {

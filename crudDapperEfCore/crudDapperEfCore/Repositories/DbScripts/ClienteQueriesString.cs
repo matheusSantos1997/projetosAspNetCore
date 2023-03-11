@@ -9,21 +9,21 @@ namespace crudDapperEfCore.Repositories.DbScripts
     {
         public static string SelectAllClientes()
         {
-            string sql = @"SELECT * FROM Clientes as c LEFT JOIN Produtos as p ON p.ClienteId = c.Id";
+            const string sql = @"SELECT * FROM Clientes as c LEFT JOIN Produtos as p ON p.ClienteId = c.Id";
 
             return sql;
         }
 
         public static string SelectClientePeloId()
         {
-            string sql = @"SELECT * FROM Clientes as c LEFT JOIN Produtos as p ON p.ClienteId = c.Id WHERE c.Id = @Id";
+            const string sql = @"SELECT * FROM Clientes as c LEFT JOIN Produtos as p ON p.ClienteId = c.Id WHERE c.Id = @Id";
 
             return sql;
         }
 
         public static string FiltrarClientePorNome()
         {
-            string sql = @"SELECT * FROM Clientes as c LEFT JOIN Produtos as p ON p.ClienteId = c.Id WHERE c.NomeCliente LIKE @NomeCliente";
+            const string sql = @"SELECT * FROM Clientes as c LEFT JOIN Produtos as p ON p.ClienteId = c.Id WHERE c.NomeCliente LIKE @NomeCliente";
 
             return sql;
         }

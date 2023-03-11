@@ -1,4 +1,6 @@
-﻿using crudDapperEfCore.Models;
+﻿using crudDapperEfCore.Attributes;
+using crudDapperEfCore.Controllers.Shared;
+using crudDapperEfCore.Models;
 using crudDapperEfCore.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,8 +12,7 @@ using System.Threading.Tasks;
 namespace crudDapperEfCore.Controllers
 {
     [Route("api/[controller]")]
-    [ApiController]
-    public class ClientesController : ControllerBase
+    public class ClientesController : ApiController
     {
         private readonly IClienteService _clienteService;
 
@@ -20,6 +21,7 @@ namespace crudDapperEfCore.Controllers
             _clienteService = clienteService;
         }
 
+        [CustomResponse(StatusCodes.Status200OK)]
         [Route("GetAllClientes")]
         [HttpGet]
         public async Task<IActionResult> GetAllClientes()
@@ -27,14 +29,15 @@ namespace crudDapperEfCore.Controllers
             try
             {
                 var clientes = await _clienteService.ListarTodosClientes();
-                return Ok(clientes);
+                return ResponseOk(clientes);
             }
             catch(Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                return ResponseInternalServerError(ex.Message);
             }
         }
 
+        [CustomResponse(StatusCodes.Status200OK)]
         [Route("GetAllClientesByNome/GetByNome/{nome}")]
         [HttpGet]
         public async Task<IActionResult> GetAllClientesByNome(string nome)
@@ -42,14 +45,15 @@ namespace crudDapperEfCore.Controllers
             try
             {
                 var clientes = await _clienteService.ListarTodosClientesPorNome(nome);
-                return Ok(clientes);
+                return ResponseOk(clientes);
             }
             catch(Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                return ResponseInternalServerError(ex.Message);
             }
         }
 
+        [CustomResponse(StatusCodes.Status200OK)]
         [Route("GetClienteById/{id}")]
         [HttpGet]
         public async Task<IActionResult> GetClienteById(long id)
@@ -58,14 +62,15 @@ namespace crudDapperEfCore.Controllers
             {
                 var cliente = await _clienteService.ListarClientePorId(id);
 
-                return Ok(cliente);
+                return ResponseOk(cliente);
             }
             catch(Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                return ResponseInternalServerError(ex.Message);
             }
         }
 
+        [CustomResponse(StatusCodes.Status201Created)]
         [Route("InsertNewCliente")]
         [HttpPost]
         public async Task<IActionResult> InsertNewCliente(Cliente model)
@@ -74,16 +79,17 @@ namespace crudDapperEfCore.Controllers
             {
                 var cliente = await _clienteService.AdicionarNovoCliente(model);
 
-                if (cliente == null) return BadRequest(new { message = $"Erro ao tentar adicionar Cliente." });
+                if (cliente == null) return ResponseBadRequest();
 
-                return Created($"/api/clientes/{model.Id}", cliente);
+                return ResponseCreated(cliente);
             }
             catch(Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                return ResponseInternalServerError(ex.Message);
             }
         }
 
+        [CustomResponse(StatusCodes.Status200OK)]
         [Route("UpdateClientes/{id}")]
         [HttpPut]
         public async Task<IActionResult> UpdateClientes(long id, Cliente model)
@@ -92,16 +98,17 @@ namespace crudDapperEfCore.Controllers
             {
                 var cliente = await _clienteService.AtualizarCliente(id, model);
 
-                if (cliente == null) return BadRequest(new { message = $"Erro ao tentar atualizar cliente." });
+                if (cliente == null) return ResponseBadRequest();
 
-                return Ok(cliente);
+                return ResponseOk(cliente);
             }
             catch(Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                return ResponseInternalServerError(ex.Message);
             }
         }
 
+        [CustomResponse(StatusCodes.Status200OK)]
         [Route("DeleteCliente/{id}")]
         [HttpDelete]
         public async Task<IActionResult> DeleteCliente(long id)
@@ -110,13 +117,13 @@ namespace crudDapperEfCore.Controllers
             {
                 var deleted = await _clienteService.DeletarCliente(id);
 
-                if(deleted == false) return BadRequest(new { message = $"Cliente não deletado." });
+                if(deleted == false) return ResponseBadRequest();
 
-                return Ok(new { message = $"Cliente Deletado com sucesso." });
+                return ResponseOk(new { message = $"Cliente Deletado com sucesso." });
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+                return ResponseInternalServerError(ex.Message);
             }
         }
     }
