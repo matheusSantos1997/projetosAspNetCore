@@ -53,7 +53,7 @@ namespace GaleriaImagens.API
                     {
                         options.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
                         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore; // ignora referencias circulares
-                        options.SerializerSettings.DateFormatString = "dd/MM/yyyy";
+                        options.SerializerSettings.DateFormatString = "dd/MM/yyyy HH:mm:ss";
                     });
             
             services.AddSwaggerGen(c =>

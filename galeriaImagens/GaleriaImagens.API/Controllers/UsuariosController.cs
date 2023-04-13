@@ -2,8 +2,8 @@ using System;
 using System.Threading.Tasks;
 using GaleriaImagens.Application.Interfaces;
 using GaleriaImagens.Application.Services;
+using GaleriaImagens.Business.DTOS;
 using GaleriaImagens.Business.Models;
-using GaleriaImagens.Business.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -46,16 +46,23 @@ namespace GaleriaImagens.API.Controllers
 
         [HttpPost("CadastrarUsuario")]
         [AllowAnonymous]
-        public async Task<IActionResult> CadastrarUsuario(Usuario user)
+        public async Task<IActionResult> CadastrarUsuario(UsuarioDTO user)
         {
             try
             {
-                var usuario = await _usuario.SignUp(user);
+                if (ModelState.IsValid)
+                {
+                    var usuarioCriado = await _usuario.SignUp(user);
 
-                if(usuario == null) return BadRequest();
+                    if (usuarioCriado != null)
+                    {
+                        return Created($"/api/usuarios/CadastrarUsuario/{user.Id}", usuarioCriado);
+                    }
 
-                return Created($"/api/usuarios/CadastrarUsuario/{user.Id}", usuario);
-                // return Ok(usuario);
+                    return BadRequest();
+                }
+
+                return BadRequest();
             }
             catch(Exception ex)
             {
@@ -65,27 +72,41 @@ namespace GaleriaImagens.API.Controllers
 
         [HttpPost("LoginUsuario")]
         [AllowAnonymous]
-        public async Task<IActionResult> LoginUsuario([FromBody]UsuarioLogin user)
+        public async Task<IActionResult> LoginUsuario([FromBody]UsuarioLoginDTO user)
         {
             try
             {
-                var usuario = await _usuario.SignIn(user);
-
-                if(usuario == null)
+                if(user == null)
                 {
-                    return Unauthorized(new { message = "Invalid Email or Password!"});
+                    return Unauthorized(new { message = "Invalid Email or Password!" });
                 }
 
-                var token = TokenService.GenerateToken(usuario, _config);
-                // usuario.Senha = "";
-                var obj = new
-                {
-                    emailUsuarioLogado = usuario.Email,
-                    usuarioId = usuario.Id,
-                    tokenUsuario = token
-                };
+                var emailUsuario = await _usuario.GetByEmail(user.Email);
 
-                return Ok(obj);
+                if(emailUsuario != null)
+                {
+                    var usuario = await _usuario.SignIn(user);
+
+                    if (usuario == null)
+                    {
+                        return Unauthorized(new { message = "Invalid Email or Password!" });
+                    }
+
+                    var token = TokenService.GenerateToken(usuario, _config);
+                    // usuario.Senha = "";
+                    var obj = new
+                    {
+                        emailUsuarioLogado = usuario.Email,
+                        usuarioId = usuario.Id,
+                        tokenUsuario = token
+                    };
+
+                    return Ok(obj);
+                }
+
+                return Unauthorized(new { message = "Invalid Email or Password!" });
+
+
             }
             catch(NullReferenceException ex)
             {

@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GaleriaImagens.Business.ViewModels
+namespace GaleriaImagens.Business.DTOS
 {
-    public class UsuarioLogin
+    public class UsuarioLoginDTO
     {
         [Column(TypeName = "varchar(200)")]
         public string Email { get; set; }

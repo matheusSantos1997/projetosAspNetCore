@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
 using GaleriaImagens.Application.Interfaces;
+using GaleriaImagens.Business.DTOS;
 using GaleriaImagens.Business.Models;
-using GaleriaImagens.Business.ViewModels;
 using GaleriaImagens.Repository.Interfaces;
 
 namespace GaleriaImagens.Application.Services
@@ -19,19 +19,29 @@ namespace GaleriaImagens.Application.Services
             _usuario = usuario;
         }
 
-        public async Task<Usuario> SignUp(Usuario user)
+        public async Task<Usuario> SignUp(UsuarioDTO user)
         {
             try
             {
-                user.Senha = BCrypt.Net.BCrypt.HashPassword(user.Senha);
+                Usuario usuario = new()
+                {
+                    Nome = user.Nome,
+                    Email = user.Email,
+                    CPF = user.CPF,
+                    Profissao = user.Profissao,
+                    NomeUsuario = user.NomeUsuario,
+                    Senha = user.Senha
+                };
 
-                _generic.Add(user);
+                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
+
+                _generic.Add(usuario);
 
                 bool save = await _generic.SaveChangesAsync();
 
                 if(save)
                 {
-                    return await _usuario.GetUsuarioById(user.Id);
+                    return await _usuario.GetUsuarioById(usuario.Id);
                 }
 
                 return null;
@@ -42,7 +52,7 @@ namespace GaleriaImagens.Application.Services
             }
         }
 
-        public async Task<Usuario> SignIn(UsuarioLogin user)
+        public async Task<Usuario> SignIn(UsuarioLoginDTO user)
         {
             try
             {
@@ -101,6 +111,25 @@ namespace GaleriaImagens.Application.Services
                 return usuario;
             }
             catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<Usuario> GetByEmail(string email)
+        {
+            try
+            {
+                var emailExiste = await _usuario.GetUsuarioByEmail(email);
+
+                if (string.IsNullOrEmpty(email))
+                {
+                    return null;
+                }
+
+                return emailExiste;
+            }
+            catch(Exception ex)
             {
                 throw new Exception(ex.Message);
             }

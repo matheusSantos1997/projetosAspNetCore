@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Threading.Tasks;
+using GaleriaImagens.Business.DTOS;
 using GaleriaImagens.Business.Models;
-using GaleriaImagens.Business.ViewModels;
 using GaleriaImagens.Repository.Context;
 using GaleriaImagens.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
@@ -28,9 +28,9 @@ namespace GaleriaImagens.Repository.Repositories
             return usuario;
         }
 
-        public async Task<Usuario> Autenticacao(UsuarioLogin user)
+        public async Task<Usuario> Autenticacao(UsuarioLoginDTO user)
         {
-            var usuario = await _context.Usuarios.SingleOrDefaultAsync(x => x.Email == user.Email);
+            var usuario = await _context.Usuarios.Where(x => x.Email == user.Email).FirstOrDefaultAsync();
 
             bool isValidPassword = BCrypt.Net.BCrypt.Verify(user.Senha, usuario.Senha);
 
@@ -41,6 +41,15 @@ namespace GaleriaImagens.Repository.Repositories
 
             return null;
         }
-        
+
+        public async Task<Usuario> GetUsuarioByEmail(string email)
+        {
+            var emailUsuarioExiste = await _context.Usuarios.AsNoTracking()
+                                                            .Include(u => u.Imagens)
+                                                            .Where(u => u.Email == email).FirstOrDefaultAsync();
+
+
+            return emailUsuarioExiste;
+        }
     }
 }
