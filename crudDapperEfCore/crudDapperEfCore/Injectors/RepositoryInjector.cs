@@ -16,6 +16,10 @@ namespace crudDapperEfCore.Injectors
             services.AddScoped<IGenericRepository, GenericRepository>();
             services.AddScoped<IClienteRepository, ClienteRepository>();
             services.AddScoped<IClienteService, ClienteService>();
+
+            // Models validation 
+            services.AddScoped<IValidator<Cliente>, ClienteValidation>();
+            services.AddScoped<IValidator<Produto>, ProdutoValidation>();
         }
     }
 }

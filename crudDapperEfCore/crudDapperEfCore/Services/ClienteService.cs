@@ -1,5 +1,6 @@
 ﻿using crudDapperEfCore.Interfaces;
 using crudDapperEfCore.Models;
+using crudDapperEfCore.Pagination;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -102,11 +103,11 @@ namespace crudDapperEfCore.Services
             }
         }
 
-        public async Task<List<Cliente>> ListarTodosClientes()
+        public async Task<PageList<Cliente>> ListarTodosClientes(PageParams pageParams)
         {
             try
             {
-                var clientes = await _clienteRepository.GetAllClientes();
+                var clientes = await _clienteRepository.GetAllClientes(pageParams);
 
                 if (clientes == null) return null;
 
@@ -118,11 +119,11 @@ namespace crudDapperEfCore.Services
             }
         }
 
-        public async Task<List<Cliente>> ListarTodosClientesPorNome(string nome)
+        public async Task<PageList<Cliente>> ListarTodosClientesPorNome(string nome, PageParams pageParams)
         {
             try
             {
-                var clientes = await _clienteRepository.GetClienteByNome(nome);
+                var clientes = await _clienteRepository.GetClienteByNome(nome, pageParams);
 
                 if (clientes == null) return null;
 

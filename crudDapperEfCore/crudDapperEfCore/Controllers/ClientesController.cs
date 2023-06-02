@@ -1,6 +1,8 @@
 ﻿using crudDapperEfCore.Attributes;
 using crudDapperEfCore.Controllers.Shared;
+using crudDapperEfCore.Extensions;
 using crudDapperEfCore.Models;
+using crudDapperEfCore.Pagination;
 using crudDapperEfCore.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -24,11 +26,14 @@ namespace crudDapperEfCore.Controllers
         [CustomResponse(StatusCodes.Status200OK)]
         [Route("GetAllClientes")]
         [HttpGet]
-        public async Task<IActionResult> GetAllClientes()
+        public async Task<IActionResult> GetAllClientes([FromQuery]PageParams pageParams)
         {
             try
             {
-                var clientes = await _clienteService.ListarTodosClientes();
+                var clientes = await _clienteService.ListarTodosClientes(pageParams);
+
+                Response.AddPagination(clientes.CurrentPage, clientes.PageSize, clientes.TotalCount, clientes.TotalPages);
+
                 return ResponseOk(clientes);
             }
             catch(Exception ex)
@@ -40,11 +45,14 @@ namespace crudDapperEfCore.Controllers
         [CustomResponse(StatusCodes.Status200OK)]
         [Route("GetAllClientesByNome/GetByNome/{nome}")]
         [HttpGet]
-        public async Task<IActionResult> GetAllClientesByNome(string nome)
+        public async Task<IActionResult> GetAllClientesByNome(string nome, [FromQuery]PageParams pageParams)
         {
             try
             {
-                var clientes = await _clienteService.ListarTodosClientesPorNome(nome);
+                var clientes = await _clienteService.ListarTodosClientesPorNome(nome, pageParams);
+
+                Response.AddPagination(clientes.CurrentPage, clientes.PageSize, clientes.TotalCount, clientes.TotalPages);
+
                 return ResponseOk(clientes);
             }
             catch(Exception ex)

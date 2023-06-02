@@ -11,52 +11,52 @@ namespace crudDapperEfCore.Controllers.Shared
     [ApiController]
     public abstract class ApiController : ControllerBase
     {
-        protected IActionResult ResponseOk(object result) => 
-            Response(HttpStatusCode.OK, result);
+        protected IActionResult ResponseOk(object result) =>
+            ResponseResult(HttpStatusCode.OK, result);
 
-        protected IActionResult ResponseOk() => 
-            Response(HttpStatusCode.OK);
+        protected IActionResult ResponseOk() =>
+            ResponseResult(HttpStatusCode.OK);
 
-        protected IActionResult ResponseCreated() => 
-            Response(HttpStatusCode.Created);
+        protected IActionResult ResponseCreated() =>
+            ResponseResult(HttpStatusCode.Created);
 
-        protected IActionResult ResponseCreated(object data) => 
-            Response(HttpStatusCode.Created, data);
+        protected IActionResult ResponseCreated(object data) =>
+            ResponseResult(HttpStatusCode.Created, data);
 
-        protected IActionResult ResponseNoContent() => 
-            Response(HttpStatusCode.NoContent);
+        protected IActionResult ResponseNoContent() =>
+            ResponseResult(HttpStatusCode.NoContent);
 
-        protected IActionResult ResponseNotModified() => 
-            Response(HttpStatusCode.NotModified);
+        protected IActionResult ResponseNotModified() =>
+            ResponseResult(HttpStatusCode.NotModified);
 
-        protected IActionResult ResponseBadRequest(string errorMessage) => 
-            Response(HttpStatusCode.BadRequest, errorMessage: errorMessage);
+        protected IActionResult ResponseBadRequest(string errorMessage) =>
+            ResponseResult(HttpStatusCode.BadRequest, errorMessage: errorMessage);
 
-        protected IActionResult ResponseBadRequest() => 
-            Response(HttpStatusCode.BadRequest, errorMessage: "A requisição é inválida");
+        protected IActionResult ResponseBadRequest() =>
+            ResponseResult(HttpStatusCode.BadRequest, errorMessage: "A requisição é inválida");
 
-        protected IActionResult ResponseNotFound(string errorMessage) => 
-            Response(HttpStatusCode.NotFound, errorMessage);
+        protected IActionResult ResponseNotFound(string errorMessage) =>
+            ResponseResult(HttpStatusCode.NotFound, errorMessage);
 
-        protected IActionResult ResponseNotFound() => 
-            Response(HttpStatusCode.NotFound, errorMessage: "O registro não foi encontrado");
+        protected IActionResult ResponseNotFound() =>
+            ResponseResult(HttpStatusCode.NotFound, errorMessage: "O registro não foi encontrado");
 
-        protected IActionResult ResponseUnauthorized(string errorMessage) => 
-            Response(HttpStatusCode.Unauthorized, errorMessage: errorMessage);
+        protected IActionResult ResponseUnauthorized(string errorMessage) =>
+            ResponseResult(HttpStatusCode.Unauthorized, errorMessage: errorMessage);
 
-        protected IActionResult ResponseUnauthorized() => 
-            Response(HttpStatusCode.Unauthorized, errorMessage: "Permissão negada");
+        protected IActionResult ResponseUnauthorized() =>
+            ResponseResult(HttpStatusCode.Unauthorized, errorMessage: "Permissão negada");
 
-        protected IActionResult ResponseInternalServerError() => 
-            Response(HttpStatusCode.InternalServerError);
+        protected IActionResult ResponseInternalServerError() =>
+            ResponseResult(HttpStatusCode.InternalServerError);
 
-        protected IActionResult ResponseInternalServerError(string errorMessage) => 
-            Response(HttpStatusCode.InternalServerError, errorMessage: errorMessage);
+        protected IActionResult ResponseInternalServerError(string errorMessage) =>
+            ResponseResult(HttpStatusCode.InternalServerError, errorMessage: errorMessage);
 
-        protected IActionResult ResponseInternalServerError(Exception exception) => 
-            Response(HttpStatusCode.InternalServerError, errorMessage: exception.Message);
+        protected IActionResult ResponseInternalServerError(Exception exception) =>
+            ResponseResult(HttpStatusCode.InternalServerError, errorMessage: exception.Message);
 
-        protected new JsonResult Response(HttpStatusCode statusCode, object data, string errorMessage)
+        protected JsonResult ResponseResultData(HttpStatusCode statusCode, object data, string errorMessage)
         {
             CustomResult result = null;
 
@@ -88,13 +88,13 @@ namespace crudDapperEfCore.Controllers.Shared
             return new JsonResult(result) { StatusCode = (int)result.StatusCode };
         }
 
-        protected new JsonResult Response(HttpStatusCode statusCode, object result) => Response(statusCode, result, null);
+        protected JsonResult ResponseResult(HttpStatusCode statusCode, object result) => ResponseResultData(statusCode, result, null);
 
 
-        protected new JsonResult Response(HttpStatusCode statusCode, string errorMessage) => Response(statusCode, null, errorMessage);
+        protected JsonResult ResponseResult(HttpStatusCode statusCode, string errorMessage) => ResponseResultData(statusCode, null, errorMessage);
        
 
-        protected new JsonResult Response(HttpStatusCode statusCode) => Response(statusCode, null, null);
+        protected JsonResult ResponseResult(HttpStatusCode statusCode) => ResponseResultData(statusCode, null, null);
 
     }
 }

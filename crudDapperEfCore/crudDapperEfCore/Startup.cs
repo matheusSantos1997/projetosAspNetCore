@@ -61,10 +61,6 @@ namespace crudDapperEfCore
                         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore; // ignora referencias circulares
                     });
 
-
-            // Models validation 
-            services.AddScoped<IValidator<Cliente>, ClienteValidation>();
-
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "crudDapperEfCore", Version = "v1" });

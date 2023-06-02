@@ -1,6 +1,7 @@
 ﻿using crudDapperEfCore.DBConnections;
 using crudDapperEfCore.Interfaces;
 using crudDapperEfCore.Models;
+using crudDapperEfCore.Pagination;
 using crudDapperEfCore.Repositories.DbScripts;
 using Dapper;
 using System;
@@ -20,7 +21,7 @@ namespace crudDapperEfCore.Repositories
             _connection = DataContext.GetConnetion();
         }
 
-        public async Task<List<Cliente>> GetAllClientes()
+        public async Task<PageList<Cliente>> GetAllClientes(PageParams pageParams)
         {
             try
             {
@@ -48,7 +49,7 @@ namespace crudDapperEfCore.Repositories
 
                 result = clientes;
 
-                return result.ToList();
+                return PageList<Cliente>.Create(result, pageParams.PageNumber, pageParams.pageSize);
             }
             catch (Exception ex)
             {
@@ -90,7 +91,7 @@ namespace crudDapperEfCore.Repositories
             }
         }
 
-        public async Task<List<Cliente>> GetClienteByNome(string nome)
+        public async Task<PageList<Cliente>> GetClienteByNome(string nome, PageParams pageParams)
         {
             try
             {
@@ -118,7 +119,7 @@ namespace crudDapperEfCore.Repositories
 
                 result = clientes;
 
-                return result.ToList();
+                return PageList<Cliente>.Create(result, pageParams.PageNumber, pageParams.pageSize);
             }
             catch(Exception ex)
             {

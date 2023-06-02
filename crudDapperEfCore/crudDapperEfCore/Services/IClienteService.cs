@@ -1,4 +1,5 @@
 ﻿using crudDapperEfCore.Models;
+using crudDapperEfCore.Pagination;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +9,11 @@ namespace crudDapperEfCore.Services
 {
     public interface IClienteService
     {
-        Task<List<Cliente>> ListarTodosClientes();
+        Task<PageList<Cliente>> ListarTodosClientes(PageParams pageParams);
 
         Task<Cliente> ListarClientePorId(long id);
 
-        Task<List<Cliente>> ListarTodosClientesPorNome(string nome);
+        Task<PageList<Cliente>> ListarTodosClientesPorNome(string nome, PageParams pageParams);
 
         Task<Cliente> AdicionarNovoCliente(Cliente cliente);
 

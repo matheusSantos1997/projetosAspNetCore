@@ -1,4 +1,5 @@
 ﻿using crudDapperEfCore.Models;
+using crudDapperEfCore.Pagination;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +9,10 @@ namespace crudDapperEfCore.Interfaces
 {
     public interface IClienteRepository
     {
-        public Task<List<Cliente>> GetAllClientes();
+        public Task<PageList<Cliente>> GetAllClientes(PageParams pageParams);
 
         public Task<Cliente> GetClienteById(long id);
 
-        public Task<List<Cliente>> GetClienteByNome(string nome);    
+        public Task<PageList<Cliente>> GetClienteByNome(string nome, PageParams pageParams);    
     }
 }
