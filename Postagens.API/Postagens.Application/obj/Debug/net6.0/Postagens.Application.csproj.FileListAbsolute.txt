@@ -1,0 +1,17 @@
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\bin\Debug\net6.0\Postagens.Application.deps.json
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\bin\Debug\net6.0\Postagens.Application.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\bin\Debug\net6.0\Postagens.Application.pdb
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\bin\Debug\net6.0\Postagens.Domain.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\bin\Debug\net6.0\Postagens.Repository.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\bin\Debug\net6.0\Postagens.Domain.pdb
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\bin\Debug\net6.0\Postagens.Repository.pdb
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\obj\Debug\net6.0\Postagens.Application.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\obj\Debug\net6.0\Postagens.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\obj\Debug\net6.0\Postagens.Application.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\obj\Debug\net6.0\Postagens.Application.AssemblyInfo.cs
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\obj\Debug\net6.0\Postagens.Application.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\obj\Debug\net6.0\Postagens.Application.csproj.CopyComplete
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\obj\Debug\net6.0\Postagens.Application.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\obj\Debug\net6.0\refint\Postagens.Application.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\obj\Debug\net6.0\Postagens.Application.pdb
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Application\obj\Debug\net6.0\ref\Postagens.Application.dll

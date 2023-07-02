@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Postagens.API.props" />
+</Project>

@@ -1,0 +1,17 @@
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\bin\Debug\net6.0\Postagens.Repository.deps.json
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\bin\Debug\net6.0\Postagens.Repository.runtimeconfig.json
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\bin\Debug\net6.0\Postagens.Repository.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\bin\Debug\net6.0\Postagens.Repository.pdb
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\bin\Debug\net6.0\Postagens.Domain.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\bin\Debug\net6.0\Postagens.Domain.pdb
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\Postagens.Repository.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\Postagens.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\Postagens.Repository.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\Postagens.Repository.AssemblyInfo.cs
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\Postagens.Repository.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\Postagens.Repository.csproj.CopyComplete
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\Postagens.Repository.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\refint\Postagens.Repository.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\Postagens.Repository.pdb
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\Postagens.Repository.genruntimeconfig.cache
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Repository\obj\Debug\net6.0\ref\Postagens.Repository.dll

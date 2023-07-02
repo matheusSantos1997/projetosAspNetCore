@@ -1,0 +1,12 @@
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\bin\Debug\net6.0\Postagens.Domain.deps.json
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\bin\Debug\net6.0\Postagens.Domain.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\bin\Debug\net6.0\Postagens.Domain.pdb
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\obj\Debug\net6.0\Postagens.Domain.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\obj\Debug\net6.0\Postagens.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\obj\Debug\net6.0\Postagens.Domain.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\obj\Debug\net6.0\Postagens.Domain.AssemblyInfo.cs
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\obj\Debug\net6.0\Postagens.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\obj\Debug\net6.0\Postagens.Domain.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\obj\Debug\net6.0\refint\Postagens.Domain.dll
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\obj\Debug\net6.0\Postagens.Domain.pdb
+C:\Users\ThinkPad\source\repos\Postagens.API\Postagens.Domain\obj\Debug\net6.0\ref\Postagens.Domain.dll
