@@ -1,6 +1,6 @@
 ﻿using CrudContatosMvc.Data;
-using CrudContatosMvc.Migrations;
 using CrudContatosMvc.Models;
+
 
 namespace CrudContatosMvc.Repositories
 {

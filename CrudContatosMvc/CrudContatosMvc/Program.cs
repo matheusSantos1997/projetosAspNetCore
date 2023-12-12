@@ -7,7 +7,8 @@ using Microsoft.Extensions.Configuration;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+.AddRazorRuntimeCompilation();
 builder.Services.AddDbContext<BancoContext>(options =>
  {
      string conn = builder.Configuration.GetConnectionString("Database");

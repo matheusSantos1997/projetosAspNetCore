@@ -1,6 +1,7 @@
 ﻿using CrudContatosMvc.Models;
 using CrudContatosMvc.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using PagedList;
 
 namespace CrudContatosMvc.Controllers
 {
@@ -13,10 +14,27 @@ namespace CrudContatosMvc.Controllers
             _contatoRepository = contatoRepository;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int? page)
         {
+            int pageSize = 3;
+            int pageNumber = (page ?? 1);
+
             var contatos = _contatoRepository.BuscarTodos();
-            return View(contatos);
+
+            // Calcular a quantidade de itens a serem pulados para a página desejada
+            int itemsToSkip = (pageNumber - 1) * pageSize;
+
+            // Obter os itens da página atual
+            var paginaDeItens = contatos.Skip(itemsToSkip).Take(pageSize).ToList();
+
+            // Calcular o número total de páginas
+            int totalItems = contatos.Count();
+            int totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+
+            // Criar um objeto PagedList manualmente
+            var pagedList = new StaticPagedList<ContatoModel>(paginaDeItens, pageNumber, pageSize, totalItems);
+
+            return View(pagedList);
         }
 
         public IActionResult Criar()

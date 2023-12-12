@@ -2,7 +2,7 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
-$(document).ready(function () {
+/*$(document).ready(function () {
     getDatatable('#table-contatos');
     getDatatable('#table-usuarios');
 
@@ -50,9 +50,17 @@ function getDatatable(id) {
             }
         }
     });
-}
+} */
+
+// Adicione referência à biblioteca jQuery no seu HTML
+// <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 $('.close-alert').click(() => {
     $(".alert").hide('hide')
 })
+
+$(document).ready(() => {
+    $("#celular").inputmask("(99)99999-9999");
+})
+
 
