@@ -1,0 +1,17 @@
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\bin\Debug\net6.0\MP.ApiDotNet6.Infra.Data.deps.json
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\bin\Debug\net6.0\MP.ApiDotNet6.Infra.Data.runtimeconfig.json
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\bin\Debug\net6.0\MP.ApiDotNet6.Infra.Data.dll
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\bin\Debug\net6.0\MP.ApiDotNet6.Infra.Data.pdb
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\bin\Debug\net6.0\MP.ApiDotNet6.Domain.dll
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\bin\Debug\net6.0\MP.ApiDotNet6.Domain.pdb
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\MP.ApiDotNet6.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\MP.ApiDotNet6.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\MP.ApiDotNet6.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\MP.ApiDotNet6.Infra.Data.AssemblyInfo.cs
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\MP.ApiDotNet6.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\MP.ApiDotNet6.Infra.Data.csproj.CopyComplete
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\MP.ApiDotNet6.Infra.Data.dll
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\refint\MP.ApiDotNet6.Infra.Data.dll
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\MP.ApiDotNet6.Infra.Data.pdb
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\MP.ApiDotNet6.Infra.Data.genruntimeconfig.cache
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotNet6.Infra.Data\obj\Debug\net6.0\ref\MP.ApiDotNet6.Infra.Data.dll

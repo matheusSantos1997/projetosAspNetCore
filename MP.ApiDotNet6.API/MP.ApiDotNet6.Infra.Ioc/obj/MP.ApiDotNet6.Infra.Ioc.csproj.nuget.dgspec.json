@@ -1,0 +1,304 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Ioc\\MP.ApiDotNet6.Infra.Ioc.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotnet6.Application\\MP.ApiDotnet6.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotnet6.Application\\MP.ApiDotnet6.Application.csproj",
+        "projectName": "MP.ApiDotnet6.Application",
+        "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotnet6.Application\\MP.ApiDotnet6.Application.csproj",
+        "packagesPath": "C:\\Users\\ThinkPad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotnet6.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj": {
+                "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj",
+        "projectName": "MP.ApiDotNet6.Domain",
+        "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj",
+        "packagesPath": "C:\\Users\\ThinkPad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Data\\MP.ApiDotNet6.Infra.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Data\\MP.ApiDotNet6.Infra.Data.csproj",
+        "projectName": "MP.ApiDotNet6.Infra.Data",
+        "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Data\\MP.ApiDotNet6.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\ThinkPad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj": {
+                "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Ioc\\MP.ApiDotNet6.Infra.Ioc.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Ioc\\MP.ApiDotNet6.Infra.Ioc.csproj",
+        "projectName": "MP.ApiDotNet6.Infra.Ioc",
+        "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Ioc\\MP.ApiDotNet6.Infra.Ioc.csproj",
+        "packagesPath": "C:\\Users\\ThinkPad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Ioc\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThinkPad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://www.nuget.org/api/v2/": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotnet6.Application\\MP.ApiDotnet6.Application.csproj": {
+                "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotnet6.Application\\MP.ApiDotnet6.Application.csproj"
+              },
+              "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj": {
+                "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj"
+              },
+              "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Data\\MP.ApiDotNet6.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Infra.Data\\MP.ApiDotNet6.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

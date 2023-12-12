@@ -1,0 +1,15 @@
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\bin\Debug\net6.0\MP.ApiDotnet6.Application.deps.json
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\bin\Debug\net6.0\MP.ApiDotnet6.Application.dll
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\bin\Debug\net6.0\MP.ApiDotnet6.Application.pdb
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\bin\Debug\net6.0\MP.ApiDotNet6.Domain.dll
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\bin\Debug\net6.0\MP.ApiDotNet6.Domain.pdb
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\obj\Debug\net6.0\MP.ApiDotnet6.Application.csproj.AssemblyReference.cache
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\obj\Debug\net6.0\MP.ApiDotnet6.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\obj\Debug\net6.0\MP.ApiDotnet6.Application.AssemblyInfoInputs.cache
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\obj\Debug\net6.0\MP.ApiDotnet6.Application.AssemblyInfo.cs
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\obj\Debug\net6.0\MP.ApiDotnet6.Application.csproj.CoreCompileInputs.cache
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\obj\Debug\net6.0\MP.ApiDotnet6.Application.csproj.CopyComplete
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\obj\Debug\net6.0\MP.ApiDotnet6.Application.dll
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\obj\Debug\net6.0\refint\MP.ApiDotnet6.Application.dll
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\obj\Debug\net6.0\MP.ApiDotnet6.Application.pdb
+C:\Users\ThinkPad\source\repos\MP.ApiDotNet6.API\MP.ApiDotnet6.Application\obj\Debug\net6.0\ref\MP.ApiDotnet6.Application.dll
