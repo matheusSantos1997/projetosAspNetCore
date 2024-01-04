@@ -1,0 +1,46 @@
+﻿@using CrudContatosMvc.Enums;
+@model UsuarioModel
+@{
+    ViewData["Title"] = "Editar Usuário";
+}
+<div class="text-center">
+    <h1 class="display-4">Editar Usuário</h1>
+</div>
+
+<form asp-controller="Usuario" asp-action="Editar" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" asp-for="Nome" class="form-control" placeholder="Digite o nome do usuário">
+        @Html.ValidationMessageFor(x => x.Nome)
+    </div>
+
+    <div class="form-group">
+        <label for="email" class="form-label">E-mail</label>
+        <input type="text" asp-for="Email" class="form-control" placeholder="Digite o e-mail do usuário">
+        @Html.ValidationMessageFor(x => x.Email)
+    </div>
+
+    <div class="form-group">
+        <label for="login" class="form-label">Login</label>
+        <input type="text" asp-for="Login" class="form-control" placeholder="Digite o login do usuário">
+        @Html.ValidationMessageFor(x => x.Login)
+    </div>
+
+    <div class="form-group">
+        <label for="perfil" class="form-label">Perfil</label>
+        <select asp-for="Perfil" class="form-control">
+            <option value="">Selecione...</option>
+            <option value="@PerfimEnum.Admin">Administrador</option>
+            <option value="@PerfimEnum.Padrao">Padrão</option>
+        </select>
+        @Html.ValidationMessageFor(x => x.Perfil)
+    </div>
+
+    <br />
+    <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary">Salvar</button>
+        <a class="btn btn-secondary" role="button" asp-controller="Usuario" asp-action="Index">Voltar</a>
+    </div>
+</form>

@@ -1,25 +1,33 @@
-﻿using CrudContatosMvc.Models;
+﻿using CrudContatosMvc.Filters;
+using CrudContatosMvc.Helper;
+using CrudContatosMvc.Models;
 using CrudContatosMvc.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using PagedList;
 
 namespace CrudContatosMvc.Controllers
 {
+    [PaginaUsuarioLogado]
     public class ContatoController : Controller
     {
         private readonly IContatoRepository _contatoRepository;
 
-        public ContatoController(IContatoRepository contatoRepository)
+        private readonly ISessao _sessao;
+
+        public ContatoController(IContatoRepository contatoRepository, ISessao sessao)
         {
             _contatoRepository = contatoRepository;
+            _sessao = sessao;
         }
 
         public IActionResult Index(int? page)
         {
+            UsuarioModel usuarioLogado = _sessao.BuscarSessaoUsuario()!;
+
             int pageSize = 3;
             int pageNumber = (page ?? 1);
 
-            var contatos = _contatoRepository.BuscarTodos();
+            var contatos = _contatoRepository.BuscarTodos(usuarioLogado.Id);
 
             // Calcular a quantidade de itens a serem pulados para a página desejada
             int itemsToSkip = (pageNumber - 1) * pageSize;
@@ -85,6 +93,9 @@ namespace CrudContatosMvc.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    UsuarioModel usuarioLogado = _sessao.BuscarSessaoUsuario()!;
+                    contato.UsuarioId = usuarioLogado.Id;
+
                     _contatoRepository.Adicionar(contato);
                     TempData["MensagemSucesso"] = "Contato cadastrado com sucesso!";
 
@@ -108,6 +119,9 @@ namespace CrudContatosMvc.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    UsuarioModel usuarioLogado = _sessao.BuscarSessaoUsuario()!;
+                    contato.UsuarioId = usuarioLogado.Id;
+
                     _contatoRepository.Atualizar(contato);
                     TempData["MensagemSucesso"] = "Contato atualizado com sucesso!";
 

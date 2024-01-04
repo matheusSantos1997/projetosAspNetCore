@@ -18,9 +18,9 @@ namespace CrudContatosMvc.Repositories
             return _context.Contatos.FirstOrDefault(x => x.Id == id)!;
         }
 
-        public List<ContatoModel> BuscarTodos()
+        public List<ContatoModel> BuscarTodos(int usuarioId)
         {
-            return _context.Contatos.ToList();
+            return _context.Contatos.Where(x => x.UsuarioId == usuarioId).ToList();
         }
 
         public ContatoModel Adicionar(ContatoModel contato)
@@ -55,7 +55,7 @@ namespace CrudContatosMvc.Repositories
         {
             ContatoModel contatoDB = ListarPorId(id);
 
-            if (contatoDB == null) throw new Exception("Houve um erro ao deletar um contato!");
+            if(contatoDB == null) throw new Exception("Houve um erro ao deletar um contato!");
 
             _context.Contatos.Remove(contatoDB);
             _context.SaveChanges();

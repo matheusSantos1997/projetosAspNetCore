@@ -21,7 +21,7 @@
 
     <div class="form-group">
         <label for="celular" class="form-label">Celular</label>
-        <input type="text" asp-for="Celular" class="form-control" id="celular" placeholder="Digite o celular do contato">
+        <input type="text" asp-for="Celular" class="form-control" id="celular" oninput="mascaraCelular()" maxlength="14" placeholder="Digite o celular do contato">
         @Html.ValidationMessageFor(x => x.Celular)
     </div>
     <br/>

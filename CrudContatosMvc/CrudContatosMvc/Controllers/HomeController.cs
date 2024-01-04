@@ -1,9 +1,11 @@
-﻿using CrudContatosMvc.Models;
+﻿using CrudContatosMvc.Filters;
+using CrudContatosMvc.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace CrudContatosMvc.Controllers
 {
+    [PaginaUsuarioLogado]
     public class HomeController : Controller
     {
 

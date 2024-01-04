@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ThinkPad\\source\\repos\\CrudContatosMvc\\CrudContatosMvc\\CrudContatosMvc.csproj": {}
+    "C:\\Users\\mathe\\Desktop\\CrudContatosMvc\\CrudContatosMvc\\CrudContatosMvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ThinkPad\\source\\repos\\CrudContatosMvc\\CrudContatosMvc\\CrudContatosMvc.csproj": {
+    "C:\\Users\\mathe\\Desktop\\CrudContatosMvc\\CrudContatosMvc\\CrudContatosMvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\CrudContatosMvc\\CrudContatosMvc\\CrudContatosMvc.csproj",
+        "projectUniqueName": "C:\\Users\\mathe\\Desktop\\CrudContatosMvc\\CrudContatosMvc\\CrudContatosMvc.csproj",
         "projectName": "CrudContatosMvc",
-        "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\CrudContatosMvc\\CrudContatosMvc\\CrudContatosMvc.csproj",
-        "packagesPath": "C:\\Users\\ThinkPad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\CrudContatosMvc\\CrudContatosMvc\\obj\\",
+        "projectPath": "C:\\Users\\mathe\\Desktop\\CrudContatosMvc\\CrudContatosMvc\\CrudContatosMvc.csproj",
+        "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mathe\\Desktop\\CrudContatosMvc\\CrudContatosMvc\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ThinkPad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,8 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -47,6 +43,10 @@
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
               "version": "[5.3.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.14, )"
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
@@ -96,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
