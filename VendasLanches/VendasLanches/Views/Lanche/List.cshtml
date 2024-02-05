@@ -1,0 +1,30 @@
+@model LancheListViewModel
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<div>
+    <h2>@Model.CategoriaAtual</h2>
+</div>
+@*<h2>@ViewData["Data"]?.ToString()?.Substring(0, 10)</h2>
+<hr/>
+   <h3>@ViewBag.Total:@ViewBag.totalLanches</h3>
+<hr/>
+
+@if(TempData.ContainsKey("Nome")) 
+{
+   <h1>@TempData["Nome"]</h1>
+} 
+else {
+    <h1>Chave nao encontrada!</h1>
+} *@
+
+<div class="container">
+    <div class="row">
+    @foreach(var lanche in Model.Lanches!)
+    {
+        <partial name="_LanchesResumo" for="@lanche" />
+    }
+    </div>
+</div>
