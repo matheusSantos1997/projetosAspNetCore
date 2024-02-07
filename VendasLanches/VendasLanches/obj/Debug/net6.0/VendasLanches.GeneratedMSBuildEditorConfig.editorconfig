@@ -9,65 +9,73 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = VendasLanches
 build_property.RootNamespace = VendasLanches
-build_property.ProjectDir = C:\Users\mathe\Desktop\VendasLanches\vendasLanches\
+build_property.ProjectDir = C:\Users\ThinkPad\Desktop\VendasLanches\VendasLanches\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\mathe\Desktop\VendasLanches\vendasLanches
+build_property.MSBuildProjectDirectory = C:\Users\ThinkPad\Desktop\VendasLanches\VendasLanches
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/CarrinhoCompra/Index.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/CarrinhoCompra/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycmluaG9Db21wcmFcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Contato/Index.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Contato/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Home/Index.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Lanche/Details.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Lanche/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2hlXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Lanche/List.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Lanche/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2hlXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Shared/Components/Default.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Pedido/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENoZWNrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Pedido/CheckoutCompleto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENoZWNrb3V0Q29tcGxldG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Shared/Components/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Shared/Components/DefaultMenu.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Shared/Components/DefaultMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGVmYXVsdE1lbnUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Shared/Error.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Shared/_Carousel.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Shared/_Carousel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJvdXNlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Shared/_LanchesResumo.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Shared/_LanchesResumo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYW5jaGVzUmVzdW1vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/_ViewImports.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/_ViewStart.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mathe/Desktop/VendasLanches/vendasLanches/Views/Shared/_Layout.cshtml]
+[C:/Users/ThinkPad/Desktop/VendasLanches/VendasLanches/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-tefvu273g3

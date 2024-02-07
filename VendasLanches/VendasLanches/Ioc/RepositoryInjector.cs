@@ -10,6 +10,7 @@ namespace VendasLanches.Ioc
         {
             services.AddScoped<ICategoriaRepository, CategoriaRepository>();
             services.AddScoped<ILancheRepository, LancheRepository>();
+            services.AddScoped<IPedidoRepository, PedidoRepository>();
 
             return services;
         }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using VendasLanches.Context;
 
@@ -11,9 +12,10 @@ using VendasLanches.Context;
 namespace VendasLanches.Migrations
 {
     [DbContext(typeof(LanchesContext))]
-    partial class LanchesContextModelSnapshot : ModelSnapshot
+    [Migration("20240205135004_TblPedidos")]
+    partial class TblPedidos
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
