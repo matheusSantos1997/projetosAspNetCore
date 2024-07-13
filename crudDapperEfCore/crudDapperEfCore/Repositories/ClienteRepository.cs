@@ -25,31 +25,30 @@ namespace crudDapperEfCore.Repositories
         {
             try
             {
-                List<Cliente> clientes = new();
+                Dictionary<dynamic, Cliente> clientes = new();
 
                 string query = ClienteQueriesString.SelectAllClientes();
 
-                var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(query,
-                  map: (cliente, produto) =>
-                  {
-                      if (clientes.FirstOrDefault(u => u.Id == cliente.Id) == null)
-                      {
-                          cliente.Produtos = new List<Produto>();
-                          clientes.Add(cliente);
-                      }
-                      else
-                      {
-                          cliente = clientes.FirstOrDefault(u => u.Id == cliente.Id);
-                      }
+                var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(
+                    query,
+                    (cliente, produto) =>
+                    {
+                        if (!clientes.TryGetValue(cliente.Id, out var currentCliente))
+                        {
+                            currentCliente = cliente;
+                            currentCliente.Produtos = new List<Produto>();
+                            clientes[cliente.Id] = currentCliente;
+                        }
 
-                      cliente.Produtos.Add(produto);
+                        if(produto != null)
+                        {
+                            currentCliente.Produtos.Add(produto);
+                        }
+                        
+                        return currentCliente;
+                    });
 
-                      return cliente;
-                  });
-
-                result = clientes;
-
-                return PageList<Cliente>.Create(result, pageParams.PageNumber, pageParams.pageSize);
+                return PageList<Cliente>.Create(clientes.Values, pageParams.PageNumber, pageParams.PageSize);
             }
             catch (Exception ex)
             {
@@ -61,29 +60,34 @@ namespace crudDapperEfCore.Repositories
         {
             try
             {
-                List<Cliente> clientes = new();
+                Dictionary<dynamic, Cliente> clientes = new();
 
-                string query = ClienteQueriesString.SelectClientePeloId();
+                var query = ClienteQueriesString.SelectClientePeloId(id);
 
-                var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(query,
-                    map: (cliente, produto) =>
+                foreach(KeyValuePair<string, object> item in query)
+                {
+                    var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(item.Key,
+                     map: (cliente, produto) =>
                     {
-                        if (clientes.FirstOrDefault(u => u.Id == cliente.Id) == null)
+                        if (!clientes.TryGetValue(cliente.Id, out var currentCliente))
                         {
-                            cliente.Produtos = new List<Produto>();
-                            clientes.Add(cliente);
+                            currentCliente = cliente;
+                            currentCliente.Produtos = new List<Produto>();
+                            clientes[cliente.Id] = currentCliente;
                         }
-                        else
+                        if (produto != null)
                         {
-                            cliente = clientes.FirstOrDefault(u => u.Id == cliente.Id);
+                            currentCliente.Produtos.Add(produto);
                         }
 
-                        cliente.Produtos.Add(produto);
+                        return currentCliente;
+                    },
+                     item.Value);
 
-                        return cliente;
-                    }, new { Id = id });
+                    return result.FirstOrDefault();
+                }
 
-                return result.FirstOrDefault();
+                return null;               
             }
             catch(Exception ex)
             {
@@ -91,35 +95,37 @@ namespace crudDapperEfCore.Repositories
             }
         }
 
-        public async Task<PageList<Cliente>> GetClienteByNome(string nome, PageParams pageParams)
+        public async Task<PageList<Cliente>> GetClienteByNome(string nomeCliente, PageParams pageParams)
         {
             try
             {
-                List<Cliente> clientes = new();
+                Dictionary<dynamic, Cliente> clientes = new();
 
-                string query = ClienteQueriesString.FiltrarClientePorNome();
+                var query = ClienteQueriesString.FiltrarClientePorNome(nomeCliente);
 
-                var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(query,
+                foreach(KeyValuePair<string, object> item in query)
+                {
+                    var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(item.Key,
                    map: (cliente, produto) =>
                    {
-                       if (clientes.FirstOrDefault(u => u.Id == cliente.Id) == null)
+                       if (!clientes.TryGetValue(cliente.Id, out var currentCliente))
                        {
-                           cliente.Produtos = new List<Produto>();
-                           clientes.Add(cliente);
+                           currentCliente = cliente;
+                           currentCliente.Produtos = new List<Produto>();
+                           clientes[cliente.Id] = currentCliente;
                        }
-                       else
+                       if (produto != null)
                        {
-                           cliente = clientes.FirstOrDefault(u => u.Id == cliente.Id);
+                           currentCliente.Produtos.Add(produto);
                        }
 
-                       cliente.Produtos.Add(produto);
+                       return currentCliente;
+                   }, item.Value);
 
-                       return cliente;
-                   }, new { NomeCliente = nome + "%" });
+                    return PageList<Cliente>.Create(clientes.Values, pageParams.PageNumber, pageParams.pageSize);
+                }
 
-                result = clientes;
-
-                return PageList<Cliente>.Create(result, pageParams.PageNumber, pageParams.pageSize);
+                return null;          
             }
             catch(Exception ex)
             {

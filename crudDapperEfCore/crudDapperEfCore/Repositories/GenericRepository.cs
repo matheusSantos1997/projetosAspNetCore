@@ -1,5 +1,6 @@
 ﻿using crudDapperEfCore.DBConnections;
 using crudDapperEfCore.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
 namespace crudDapperEfCore.Repositories
@@ -23,12 +24,18 @@ namespace crudDapperEfCore.Repositories
             _context.Update(entity);
         }
 
+        public void Attach<T>(T entity, EntityState state) where T : class
+        {
+            _context.Attach(entity);
+            _context.Entry(entity).State = state;
+        }
+
         public void Excluir<T>(T entity) where T : class
         {
             _context.Remove(entity);
         }
 
-        public async Task<bool> SaveChangesAsync()
+        public async Task<bool> CommitAsync()
         {
             bool result = await _context.SaveChangesAsync() > 0;
             return result;

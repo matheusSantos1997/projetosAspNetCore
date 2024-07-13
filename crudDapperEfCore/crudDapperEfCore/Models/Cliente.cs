@@ -12,13 +12,10 @@ namespace crudDapperEfCore.Models
         [Key]
         public long Id { get; set; }
 
-        [Column(TypeName = "varchar(50)")]
         public string NomeCliente { get; set; }
 
-        [Column(TypeName = "varchar(90)")]
         public string Email { get; set; }
 
-        [Column(TypeName = "varchar(40)")]
         public string Endereco { get; set; }
 
         public IList<Produto> Produtos { get; set; }

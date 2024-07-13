@@ -12,10 +12,8 @@ namespace crudDapperEfCore.Models
         [Key]
         public long Id { get; set; }
 
-        [Column(TypeName = "varchar(50)")]
         public string NomeProduto { get; set; }
 
-        [Column(TypeName = "varchar(50)")]
         public string TipoProduto { get; set; }
 
         public decimal Preco { get; set; }

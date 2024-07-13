@@ -1,5 +1,6 @@
 ﻿using crudDapperEfCore.Attributes;
 using crudDapperEfCore.Controllers.Shared;
+using crudDapperEfCore.DTOs.Cliente;
 using crudDapperEfCore.Extensions;
 using crudDapperEfCore.Models;
 using crudDapperEfCore.Pagination;
@@ -81,11 +82,11 @@ namespace crudDapperEfCore.Controllers
         [CustomResponse(StatusCodes.Status201Created)]
         [Route("InsertNewCliente")]
         [HttpPost]
-        public async Task<IActionResult> InsertNewCliente(Cliente model)
+        public async Task<IActionResult> InsertNewCliente(CreateNewClienteDTO clienteDto)
         {
             try
             {
-                var cliente = await _clienteService.AdicionarNovoCliente(model);
+                var cliente = await _clienteService.AdicionarNovoCliente(clienteDto);
 
                 if (cliente == null) return ResponseBadRequest();
 
@@ -100,11 +101,11 @@ namespace crudDapperEfCore.Controllers
         [CustomResponse(StatusCodes.Status200OK)]
         [Route("UpdateClientes/{id}")]
         [HttpPut]
-        public async Task<IActionResult> UpdateClientes(long id, Cliente model)
+        public async Task<IActionResult> UpdateClientes(long id, UpdateClienteDTO clienteDto)
         {
             try
             {
-                var cliente = await _clienteService.AtualizarCliente(id, model);
+                var cliente = await _clienteService.AtualizarCliente(id, clienteDto);
 
                 if (cliente == null) return ResponseBadRequest();
 

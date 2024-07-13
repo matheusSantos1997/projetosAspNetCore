@@ -1,4 +1,5 @@
-﻿using crudDapperEfCore.Models;
+﻿using crudDapperEfCore.DTOs.Cliente;
+using crudDapperEfCore.Models;
 using crudDapperEfCore.Pagination;
 using System;
 using System.Collections.Generic;
@@ -9,15 +10,15 @@ namespace crudDapperEfCore.Services
 {
     public interface IClienteService
     {
-        Task<PageList<Cliente>> ListarTodosClientes(PageParams pageParams);
+        Task<PageList<ClienteDTO>> ListarTodosClientes(PageParams pageParams);
 
-        Task<Cliente> ListarClientePorId(long id);
+        Task<ClienteDTO> ListarClientePorId(long id);
 
-        Task<PageList<Cliente>> ListarTodosClientesPorNome(string nome, PageParams pageParams);
+        Task<PageList<ClienteDTO>> ListarTodosClientesPorNome(string nome, PageParams pageParams);
 
-        Task<Cliente> AdicionarNovoCliente(Cliente cliente);
+        Task<CreateNewClienteDTO> AdicionarNovoCliente(CreateNewClienteDTO clienteDto);
 
-        Task<Cliente> AtualizarCliente(long id, Cliente cliente);
+        Task<UpdateClienteDTO> AtualizarCliente(long id, UpdateClienteDTO clienteDto);
 
         Task<bool> DeletarCliente(long id);
     }
