@@ -23,6 +23,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Serialization;
+using OfficeOpenXml;
 
 namespace crudDapperEfCore
 {
@@ -43,6 +44,8 @@ namespace crudDapperEfCore
            // ConnectionString.StringConexao = Configuration["ConnectionStrings:localConnection"];
 
             RepositoryInjector.RegisterRepositories(services);
+
+            ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
 
             services.AddCors();
 

@@ -56,6 +56,43 @@ namespace crudDapperEfCore.Repositories
             }
         }
 
+        public async Task<List<Cliente>> GetAllClientes()
+        {
+            try
+            {
+                Dictionary<dynamic, Cliente> clientes = new();
+
+                string query = ClienteQueriesString.SelectAllClientes();
+
+                var result = await _connection.QueryAsync<Cliente, Produto, Cliente>(
+                   query,
+                    (cliente, produto) =>
+                    {
+                        if (!clientes.TryGetValue(cliente.Id, out var currentCliente))
+                        {
+                            currentCliente = cliente;
+                            currentCliente.Produtos = new List<Produto>();
+                            clientes[cliente.Id] = currentCliente;
+                        }
+
+                        if (produto != null)
+                        {
+                            currentCliente.Produtos.Add(produto);
+                        }
+
+                        return currentCliente;
+                    });
+
+                result = clientes.Values;
+
+                return result.ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<Cliente> GetClienteById(long id)
         {
             try

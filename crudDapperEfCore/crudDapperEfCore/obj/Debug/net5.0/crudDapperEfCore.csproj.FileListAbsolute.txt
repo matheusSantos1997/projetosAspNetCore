@@ -7,6 +7,7 @@ C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\crudDa
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\crudDapperEfCore.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\crudDapperEfCore.pdb
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Dapper.dll
+C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\EPPlus.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
@@ -26,6 +27,7 @@ C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Micros
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
@@ -66,9 +68,9 @@ C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\static
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\staticwebassets\crudDapperEfCore.StaticWebAssets.xml
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\scopedcss\bundle\crudDapperEfCore.styles.css
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\crudDapperEfCore.RazorTargetAssemblyInfo.cache
-C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\crudDapperEfCore.csproj.CopyComplete
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\crudDapperEfCore.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\refint\crudDapperEfCore.dll
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\crudDapperEfCore.pdb
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\crudDapperEfCore.genruntimeconfig.cache
 C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\ref\crudDapperEfCore.dll
+C:\Users\mathe\Desktop\crudDapperEfCore\crudDapperEfCore\obj\Debug\net5.0\crudDapp.3651A489.Up2Date

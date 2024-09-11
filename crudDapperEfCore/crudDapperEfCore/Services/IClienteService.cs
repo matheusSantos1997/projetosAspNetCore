@@ -12,6 +12,8 @@ namespace crudDapperEfCore.Services
     {
         Task<PageList<ClienteDTO>> ListarTodosClientes(PageParams pageParams);
 
+        Task<List<ClienteDTO>> ListarTodosClientes();
+
         Task<ClienteDTO> ListarClientePorId(long id);
 
         Task<PageList<ClienteDTO>> ListarTodosClientesPorNome(string nome, PageParams pageParams);

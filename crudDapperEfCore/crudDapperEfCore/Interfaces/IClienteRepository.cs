@@ -11,6 +11,8 @@ namespace crudDapperEfCore.Interfaces
     {
         public Task<PageList<Cliente>> GetAllClientes(PageParams pageParams);
 
+        public Task<List<Cliente>> GetAllClientes();
+
         public Task<Cliente> GetClienteById(long id);
 
         public Task<PageList<Cliente>> GetClienteByNome(string nome, PageParams pageParams);    

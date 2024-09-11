@@ -1,13 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MP.ApiDotNet6.Domain.FiltersDb;
 using MP.ApiDotNet6.Domain.Models;
-using MP.ApiDotNet6.Domain.Repositories;
 using MP.ApiDotNet6.Infra.Data.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MP.ApiDotNet6.Infra.Data.FiltersDb;
+using MP.ApiDotNet6.Infra.Data.Repositories.Interfaces;
 
 namespace MP.ApiDotNet6.Infra.Data.Repositories
 {

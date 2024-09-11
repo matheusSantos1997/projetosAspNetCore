@@ -3,7 +3,7 @@ using MP.ApiDotnet6.Application.Dtos;
 using MP.ApiDotnet6.Application.Dtos.Validations;
 using MP.ApiDotnet6.Application.Services.Interfaces;
 using MP.ApiDotNet6.Domain.Models;
-using MP.ApiDotNet6.Domain.Repositories;
+using MP.ApiDotNet6.Infra.Data.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

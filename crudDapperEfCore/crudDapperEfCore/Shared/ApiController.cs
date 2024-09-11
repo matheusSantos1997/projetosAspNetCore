@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -11,8 +10,11 @@ namespace crudDapperEfCore.Controllers.Shared
     [ApiController]
     public abstract class ApiController : ControllerBase
     {
-        protected IActionResult ResponseOk(object result) =>
-            ResponseResult(HttpStatusCode.OK, result);
+        protected IActionResult ResponseOk(object result = null, string message = null) =>
+            ResponseResult(HttpStatusCode.OK, result, message);
+
+        protected IActionResult ResponseOk(string message) =>
+            ResponseResult(HttpStatusCode.OK, null, message);
 
         protected IActionResult ResponseOk() =>
             ResponseResult(HttpStatusCode.OK);
@@ -20,8 +22,8 @@ namespace crudDapperEfCore.Controllers.Shared
         protected IActionResult ResponseCreated() =>
             ResponseResult(HttpStatusCode.Created);
 
-        protected IActionResult ResponseCreated(object data) =>
-            ResponseResult(HttpStatusCode.Created, data);
+        protected IActionResult ResponseCreated(object data, string message) =>
+            ResponseResult(HttpStatusCode.Created, data, message);
 
         protected IActionResult ResponseNoContent() =>
             ResponseResult(HttpStatusCode.NoContent);
@@ -56,21 +58,21 @@ namespace crudDapperEfCore.Controllers.Shared
         protected IActionResult ResponseInternalServerError(Exception exception) =>
             ResponseResult(HttpStatusCode.InternalServerError, errorMessage: exception.Message);
 
-        protected JsonResult ResponseResultData(HttpStatusCode statusCode, object data, string errorMessage)
+        protected JsonResult ResponseResultData(HttpStatusCode statusCode, object data, string successMessage, string errorMessage)
         {
-            CustomResult result = null;
+            CustomResult result;
 
-            if(string.IsNullOrEmpty(errorMessage))
+            if (string.IsNullOrEmpty(errorMessage))
             {
                 var success = statusCode.IsSuccess();
 
-                if(data != null)
+                if (data != null)
                 {
-                    result = new CustomResult(statusCode, success, data);
+                    result = new CustomResult(statusCode, success, data, successMessage);
                 }
                 else
                 {
-                    result = new CustomResult(statusCode, success);
+                    result = new CustomResult(statusCode, success, successMessage);
                 }
             }
             else
@@ -82,19 +84,23 @@ namespace crudDapperEfCore.Controllers.Shared
                     errors.Add(errorMessage);
                 }
 
-                result = new CustomResult(statusCode, false, errors);
+                result = new CustomResult(statusCode, false, successMessage, errors);
             }
 
-            return new JsonResult(result) { StatusCode = (int)result.StatusCode };
+            // Certifique-se de que o StatusCode seja atribuído corretamente
+            var jsonResult = new JsonResult(result);
+            jsonResult.StatusCode = (int)statusCode;
+
+            return jsonResult;
         }
 
-        protected JsonResult ResponseResult(HttpStatusCode statusCode, object result) => ResponseResultData(statusCode, result, null);
+        protected JsonResult ResponseResult(HttpStatusCode statusCode, object result, string message) =>
+            ResponseResultData(statusCode, result, message, null);
 
+        protected JsonResult ResponseResult(HttpStatusCode statusCode, string errorMessage) =>
+            ResponseResultData(statusCode, null, null, errorMessage);
 
-        protected JsonResult ResponseResult(HttpStatusCode statusCode, string errorMessage) => ResponseResultData(statusCode, null, errorMessage);
-       
-
-        protected JsonResult ResponseResult(HttpStatusCode statusCode) => ResponseResultData(statusCode, null, null);
-
+        protected JsonResult ResponseResult(HttpStatusCode statusCode) =>
+            ResponseResultData(statusCode, null, null, null);
     }
 }

@@ -5,9 +5,11 @@ using crudDapperEfCore.Extensions;
 using crudDapperEfCore.Models;
 using crudDapperEfCore.Pagination;
 using crudDapperEfCore.Services;
+using crudDapperEfCore.Services.Exports;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Buffers.Text;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -19,9 +21,12 @@ namespace crudDapperEfCore.Controllers
     {
         private readonly IClienteService _clienteService;
 
-        public ClientesController(IClienteService clienteService)
+        private readonly IExcelExportService _excelExportService;
+
+        public ClientesController(IClienteService clienteService, IExcelExportService excelExportService)
         {
             _clienteService = clienteService;
+            _excelExportService = excelExportService;
         }
 
         [CustomResponse(StatusCodes.Status200OK)]
@@ -33,11 +38,60 @@ namespace crudDapperEfCore.Controllers
             {
                 var clientes = await _clienteService.ListarTodosClientes(pageParams);
 
+                if (!clientes.Any()) return ResponseNoContent();
+
                 Response.AddPagination(clientes.CurrentPage, clientes.PageSize, clientes.TotalCount, clientes.TotalPages);
 
-                return ResponseOk(clientes);
+                return ResponseOk(clientes, "Sucesso!");
             }
             catch(Exception ex)
+            {
+                return ResponseInternalServerError(ex.Message);
+            }
+        }
+
+        [CustomResponse(StatusCodes.Status200OK)]
+        [Route("ExportToExcelFile")]
+        [HttpGet]
+        public async Task<IActionResult> ExportToExcelFile([FromQuery] bool asBase64)
+        {
+            try
+            {
+                var clientes = await _clienteService.ListarTodosClientes();
+
+                if (clientes == null || !clientes.Any())
+                {
+                    return ResponseNotFound();
+                }
+
+                var propertiesToExport = GetColumsCells();
+
+                if (asBase64)
+                {
+                    // Retornar como Base64
+                    var base64Content = await _excelExportService.ExportToExcelBase64Async(clientes, "Clientes", propertiesToExport);
+
+                    if (string.IsNullOrEmpty(base64Content))
+                    {
+                        return ResponseInternalServerError("Falha ao exportar um arquivo.");
+                    }
+
+                    return ResponseOk(new { fileName = "Clientes.xlsx", content = base64Content });
+                }
+                else
+                {
+                    // Retornar como array de bytes
+                    var content = await _excelExportService.ExportToExcelAsync(clientes, "Clientes", propertiesToExport);
+
+                    if (content == null || content.Length == 0)
+                    {
+                        return ResponseInternalServerError("Falha ao exportar um arquivo.");
+                    }
+
+                    return File(content, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "Clientes.xlsx");
+                }
+            }
+            catch (Exception ex)
             {
                 return ResponseInternalServerError(ex.Message);
             }
@@ -54,7 +108,7 @@ namespace crudDapperEfCore.Controllers
 
                 Response.AddPagination(clientes.CurrentPage, clientes.PageSize, clientes.TotalCount, clientes.TotalPages);
 
-                return ResponseOk(clientes);
+                return ResponseOk(clientes, "Sucesso!");
             }
             catch(Exception ex)
             {
@@ -71,7 +125,9 @@ namespace crudDapperEfCore.Controllers
             {
                 var cliente = await _clienteService.ListarClientePorId(id);
 
-                return ResponseOk(cliente);
+                if (cliente == null) return ResponseNotFound();
+
+                return ResponseOk(cliente, "Sucesso!");
             }
             catch(Exception ex)
             {
@@ -90,7 +146,7 @@ namespace crudDapperEfCore.Controllers
 
                 if (cliente == null) return ResponseBadRequest();
 
-                return ResponseCreated(cliente);
+                return ResponseCreated(cliente, "Cliente cadastrado com sucesso!");
             }
             catch(Exception ex)
             {
@@ -109,7 +165,7 @@ namespace crudDapperEfCore.Controllers
 
                 if (cliente == null) return ResponseBadRequest();
 
-                return ResponseOk(cliente);
+                return ResponseOk(cliente, "Cliente atualizado com sucesso!");
             }
             catch(Exception ex)
             {
@@ -128,12 +184,27 @@ namespace crudDapperEfCore.Controllers
 
                 if(deleted == false) return ResponseBadRequest();
 
-                return ResponseOk(new { message = $"Cliente Deletado com sucesso." });
+                return ResponseOk("Cliente Deletado com sucesso.");
             }
             catch (Exception ex)
             {
                 return ResponseInternalServerError(ex.Message);
             }
+        }
+
+        [NonAction]
+        private static Dictionary<string, string> GetColumsCells()
+        {
+            var propertiesToExport = new Dictionary<string, string>
+            {
+                  { "Id", "IdCliente" },
+                  { "NomeCliente", "NomeCliente" },
+                  { "Email", "Email" },
+                  { "Endereco", "Endereço" },
+                  { "NomesProdutos", "Produtos" }
+            };
+
+            return propertiesToExport;
         }
     }
 }

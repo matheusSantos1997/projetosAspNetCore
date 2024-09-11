@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MP.ApiDotNet6.Domain.Models;
-using MP.ApiDotNet6.Domain.Repositories;
 using MP.ApiDotNet6.Infra.Data.Context;
+using MP.ApiDotNet6.Infra.Data.Repositories.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -24,6 +24,7 @@ namespace crudDapperEfCore.Repositories
             _context.Update(entity);
         }
 
+        // rastreia a instancia do DbContext
         public void Attach<T>(T entity, EntityState state) where T : class
         {
             _context.Attach(entity);
@@ -35,6 +36,7 @@ namespace crudDapperEfCore.Repositories
             _context.Remove(entity);
         }
 
+        // salva mudanças na requisiçao
         public async Task<bool> CommitAsync()
         {
             bool result = await _context.SaveChangesAsync() > 0;

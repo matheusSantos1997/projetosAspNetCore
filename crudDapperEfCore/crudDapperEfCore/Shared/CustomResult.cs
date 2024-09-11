@@ -14,6 +14,8 @@ namespace crudDapperEfCore.Controllers.Shared
 
         public object Data { get; private set; }
 
+        public string Message { get; private set; }
+
         public IList<string> Errors { get; private set; }
 
         public CustomResult(HttpStatusCode statusCode, bool success)
@@ -22,17 +24,26 @@ namespace crudDapperEfCore.Controllers.Shared
             Success = success;
         }
 
-        public CustomResult(HttpStatusCode statusCode, bool success, object data) : this(statusCode, success)
+        public CustomResult(HttpStatusCode statusCode, bool success, string message)
+        {
+            StatusCode = statusCode;
+            Success = success;
+            Message = message;
+        }
+
+        public CustomResult(HttpStatusCode statusCode, bool success, object data, string message) : this(statusCode, success)
         {
             Data = data;
+            Message = message;
         }
 
-        public CustomResult(HttpStatusCode statusCode, bool success, IList<string> errors) : this(statusCode, success)
+        public CustomResult(HttpStatusCode statusCode, bool success, string message, IList<string> errors) : this(statusCode, success)
         {
             Errors = errors;
+            Message = message;
         }
 
-        public CustomResult(HttpStatusCode statusCode, bool success, object data, IList<string> errors) : this(statusCode, success, data)
+        public CustomResult(HttpStatusCode statusCode, bool success, object data, string message, IList<string> errors) : this(statusCode, success, data, message)
         {
             Errors = errors;
         }

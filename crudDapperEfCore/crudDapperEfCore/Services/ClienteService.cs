@@ -71,6 +71,51 @@ namespace crudDapperEfCore.Services
             }
         }
 
+        public async Task<List<ClienteDTO>> ListarTodosClientes()
+        {
+            try
+            {
+                var clientes = await _clienteRepository.GetAllClientes();
+
+                if (clientes == null) return null;
+
+                var clientesDto = new List<ClienteDTO>();
+
+                // Mapeia cada cliente para o DTO correspondente
+                foreach (var cliente in clientes)
+                {
+                    // Mapeia manualmente os Produtos para ProdutoDTO
+                    var produtosDto = cliente.Produtos.Select(produto => new ProdutoDTO
+                    {
+                        Id = produto.Id,
+                        NomeProduto = produto.NomeProduto,
+                        TipoProduto = produto.TipoProduto,
+                        Preco = produto.Preco,
+                        ClienteId = produto.ClienteId
+
+                        // Adicione outras propriedades conforme necessário
+                    }).ToList();
+
+                    var clienteDto = new ClienteDTO()
+                    {
+                        Id = cliente.Id,
+                        NomeCliente = cliente.NomeCliente,
+                        Email = cliente.Email,
+                        Endereco = cliente.Endereco,
+                        Produtos = produtosDto
+                    };
+
+                    clientesDto.Add(clienteDto);
+                }
+          
+                return clientesDto;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task<ClienteDTO> ListarClientePorId(long id)
         {
             try

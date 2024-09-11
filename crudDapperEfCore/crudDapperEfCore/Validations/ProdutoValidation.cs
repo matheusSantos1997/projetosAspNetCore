@@ -1,9 +1,10 @@
-﻿using crudDapperEfCore.Models;
+﻿using crudDapperEfCore.DTOs.Produto;
+using crudDapperEfCore.Models;
 using FluentValidation;
 
 namespace crudDapperEfCore.Validations
 {
-    public class ProdutoValidation : AbstractValidator<Produto>
+    public class ProdutoValidation : AbstractValidator<CreateNewProdutoDTO>
     {
         public ProdutoValidation()
         {

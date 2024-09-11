@@ -8,23 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ThinkPad\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\mathe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\Desktop\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj",
       "projectName": "MP.ApiDotNet6.Domain",
-      "projectPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj",
-      "packagesPath": "C:\\Users\\ThinkPad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThinkPad\\source\\repos\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\obj\\",
+      "projectPath": "C:\\Users\\mathe\\Desktop\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\MP.ApiDotNet6.Domain.csproj",
+      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mathe\\Desktop\\MP.ApiDotNet6.API\\MP.ApiDotNet6.Domain\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ThinkPad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -32,7 +28,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -65,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

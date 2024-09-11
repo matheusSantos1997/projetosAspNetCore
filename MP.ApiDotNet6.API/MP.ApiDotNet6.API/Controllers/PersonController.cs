@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MP.ApiDotnet6.Application.Dtos;
 using MP.ApiDotnet6.Application.Services.Interfaces;
-using MP.ApiDotNet6.Domain.FiltersDb;
+using MP.ApiDotNet6.Infra.Data.FiltersDb;
 
 namespace MP.ApiDotNet6.API.Controllers
 {

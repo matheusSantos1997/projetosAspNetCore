@@ -1,9 +1,10 @@
-﻿using crudDapperEfCore.Models;
+﻿using crudDapperEfCore.DTOs.Cliente;
+using crudDapperEfCore.Models;
 using FluentValidation;
 
 namespace crudDapperEfCore.Validations
 {
-    public class ClienteValidation : AbstractValidator<Cliente>
+    public class ClienteValidation : AbstractValidator<CreateNewClienteDTO>
     {
         public ClienteValidation()
         {

@@ -52,9 +52,7 @@ namespace crudDapperEfCore.DBConnections
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.ApplyConfiguration(new ClienteMap());
-
-            modelBuilder.ApplyConfiguration(new ProdutoMap());
+            modelBuilder.ApplyConfigurationsFromAssembly(typeof(DataContext).Assembly);
         }
     }
 }

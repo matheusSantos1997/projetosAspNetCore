@@ -1,7 +1,10 @@
-﻿using crudDapperEfCore.Interfaces;
+﻿using crudDapperEfCore.DTOs.Cliente;
+using crudDapperEfCore.DTOs.Produto;
+using crudDapperEfCore.Interfaces;
 using crudDapperEfCore.Models;
 using crudDapperEfCore.Repositories;
 using crudDapperEfCore.Services;
+using crudDapperEfCore.Services.Exports;
 using crudDapperEfCore.Validations;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,10 +19,11 @@ namespace crudDapperEfCore.Injectors
             services.AddScoped<IGenericRepository, GenericRepository>();
             services.AddScoped<IClienteRepository, ClienteRepository>();
             services.AddScoped<IClienteService, ClienteService>();
+            services.AddScoped<IExcelExportService, ExcelExportService>();
 
             // Models validation 
-            services.AddScoped<IValidator<Cliente>, ClienteValidation>();
-            services.AddScoped<IValidator<Produto>, ProdutoValidation>();
+            services.AddScoped<IValidator<CreateNewClienteDTO>, ClienteValidation>();
+            services.AddScoped<IValidator<CreateNewProdutoDTO>, ProdutoValidation>();
         }
     }
 }
