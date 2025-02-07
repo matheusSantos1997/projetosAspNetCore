@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/CadastroPessoa.API.props" />
+</Project>

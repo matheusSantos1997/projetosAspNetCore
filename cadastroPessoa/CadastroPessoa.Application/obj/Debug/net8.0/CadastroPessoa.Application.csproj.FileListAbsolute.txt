@@ -1,0 +1,17 @@
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/bin/Debug/net8.0/CadastroPessoa.Application.deps.json
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/bin/Debug/net8.0/CadastroPessoa.Application.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/bin/Debug/net8.0/CadastroPessoa.Application.pdb
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/bin/Debug/net8.0/CadastroPessoa.CrossCutting.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/bin/Debug/net8.0/CadastroPessoa.Domain.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/bin/Debug/net8.0/CadastroPessoa.CrossCutting.pdb
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/bin/Debug/net8.0/CadastroPessoa.Domain.pdb
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/obj/Debug/net8.0/CadastroPessoa.Application.csproj.AssemblyReference.cache
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/obj/Debug/net8.0/CadastroPessoa.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/obj/Debug/net8.0/CadastroPessoa.Application.AssemblyInfoInputs.cache
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/obj/Debug/net8.0/CadastroPessoa.Application.AssemblyInfo.cs
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/obj/Debug/net8.0/CadastroPessoa.Application.csproj.CoreCompileInputs.cache
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/obj/Debug/net8.0/Cadastro.52534003.Up2Date
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/obj/Debug/net8.0/CadastroPessoa.Application.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/obj/Debug/net8.0/refint/CadastroPessoa.Application.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/obj/Debug/net8.0/CadastroPessoa.Application.pdb
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Application/obj/Debug/net8.0/ref/CadastroPessoa.Application.dll

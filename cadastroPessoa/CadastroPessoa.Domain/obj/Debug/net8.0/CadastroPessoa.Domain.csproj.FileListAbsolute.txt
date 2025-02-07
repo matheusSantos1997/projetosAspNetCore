@@ -1,0 +1,15 @@
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/bin/Debug/net8.0/CadastroPessoa.Domain.deps.json
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/bin/Debug/net8.0/CadastroPessoa.Domain.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/bin/Debug/net8.0/CadastroPessoa.Domain.pdb
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/bin/Debug/net8.0/CadastroPessoa.CrossCutting.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/bin/Debug/net8.0/CadastroPessoa.CrossCutting.pdb
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/obj/Debug/net8.0/CadastroPessoa.Domain.csproj.AssemblyReference.cache
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/obj/Debug/net8.0/CadastroPessoa.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/obj/Debug/net8.0/CadastroPessoa.Domain.AssemblyInfoInputs.cache
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/obj/Debug/net8.0/CadastroPessoa.Domain.AssemblyInfo.cs
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/obj/Debug/net8.0/CadastroPessoa.Domain.csproj.CoreCompileInputs.cache
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/obj/Debug/net8.0/Cadastro.3103111D.Up2Date
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/obj/Debug/net8.0/CadastroPessoa.Domain.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/obj/Debug/net8.0/refint/CadastroPessoa.Domain.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/obj/Debug/net8.0/CadastroPessoa.Domain.pdb
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.Domain/obj/Debug/net8.0/ref/CadastroPessoa.Domain.dll

@@ -1,0 +1,12 @@
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/bin/Debug/net8.0/CadastroPessoa.CrossCutting.deps.json
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/bin/Debug/net8.0/CadastroPessoa.CrossCutting.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/bin/Debug/net8.0/CadastroPessoa.CrossCutting.pdb
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/obj/Debug/net8.0/CadastroPessoa.CrossCutting.GeneratedMSBuildEditorConfig.editorconfig
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/obj/Debug/net8.0/CadastroPessoa.CrossCutting.AssemblyInfoInputs.cache
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/obj/Debug/net8.0/CadastroPessoa.CrossCutting.AssemblyInfo.cs
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/obj/Debug/net8.0/CadastroPessoa.CrossCutting.csproj.CoreCompileInputs.cache
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/obj/Debug/net8.0/CadastroPessoa.CrossCutting.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/obj/Debug/net8.0/refint/CadastroPessoa.CrossCutting.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/obj/Debug/net8.0/CadastroPessoa.CrossCutting.pdb
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/obj/Debug/net8.0/ref/CadastroPessoa.CrossCutting.dll
+/Users/matheussantos/Desktop/cadastroPessoa/CadastroPessoa.CrossCutting/obj/Debug/net8.0/CadastroPessoa.CrossCutting.csproj.AssemblyReference.cache
